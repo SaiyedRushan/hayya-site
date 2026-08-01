@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Hayya">
+  <!-- Same crescent + call-dot geometry as the app icon (see tools/generate-icons.js):
+       crescent = circle(512,512,r=307.2) minus circle(665.6,425.98,r=282.62);
+       call dot = circle(813.06,281.6,r=53.25). -->
+  <defs>
+    <mask id="crescent">
+      <rect width="1024" height="1024" fill="#000"/>
+      <circle cx="512" cy="512" r="307.2" fill="#fff"/>
+      <circle cx="665.6" cy="425.984" r="282.624" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="#0c2b21"/>
+  <rect width="1024" height="1024" fill="#c8a352" mask="url(#crescent)"/>
+  <circle cx="813.056" cy="281.6" r="53.248" fill="#c8a352"/>
+</svg>

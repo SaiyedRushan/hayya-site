@@ -3,80 +3,324 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hayya — Prayer times as call-style alarms</title>
-  <meta name="description" content="Hayya turns Muslim prayer times into insistent, call-style alarms. Private by design — everything stays on your device." />
+  <title>Hayya: Prayer Alarm — Salah that calls you</title>
+  <meta name="description" content="Hayya turns Muslim prayer times into insistent, call-style alarms. Answer to log the prayer and grow your streak. Free, offline, and private by design — everything stays on your device." />
+  <link rel="canonical" href="https://saiyedrushan.github.io/hayya-site/" />
+  <meta name="theme-color" content="#0c2b21" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hayya" />
+  <meta property="og:title" content="Hayya: Prayer Alarm — Salah that calls you" />
+  <meta property="og:description" content="Prayer times that ring like an incoming call. Answer, and never miss salah." />
+  <meta property="og:url" content="https://saiyedrushan.github.io/hayya-site/" />
+  <meta property="og:image" content="https://saiyedrushan.github.io/hayya-site/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <nav class="site-nav">
-    <div class="wrap">
-      <a class="brand" href="index.html"><span class="dot"></span><span>Hayya</span></a>
+    <div class="wrap-wide">
+      <a class="brand" href="index.html"><img src="assets/icon-192.png" alt="" width="28" height="28" /><span>Hayya</span></a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy</a>
+        <a class="nav-only-wide" href="#features">Features</a>
+        <a class="nav-only-wide" href="#screenshots">Screenshots</a>
+        <a class="nav-only-wide" href="#faq">FAQ</a>
         <a href="support.html">Support</a>
+        <a class="nav-cta" href="#download">Get the app</a>
       </div>
     </div>
   </nav>
 
   <header class="hero">
+    <img class="app-icon" src="assets/icon-512.png" alt="Hayya app icon" width="104" height="104" />
     <div class="badge">Never miss a prayer</div>
     <h1>Hayya</h1>
-    <p>Prayer times that call you like an incoming call — insistent, full-screen, impossible to sleep through. Private by design.</p>
-    <div class="cta">
-      <a class="btn btn-gold" href="#features">See how it works</a>
-      <a class="btn btn-ghost" href="privacy.html">Privacy policy</a>
+    <p class="tagline">Salah that calls you</p>
+    <p class="lede">You don't ignore a phone call. Hayya makes salah just as hard to walk past — at every prayer time your phone rings with a real ringtone and a real incoming-call screen.</p>
+
+    <div class="store-badges">
+      <a href="https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268" aria-label="Download Hayya on the App Store">
+        <img src="assets/badge-app-store.svg" alt="Download on the App Store" width="156" height="52" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya" aria-label="Get Hayya on Google Play">
+        <img src="assets/badge-google-play.png" alt="Get it on Google Play" width="150" height="52" />
+      </a>
     </div>
+    <p class="store-note">Android is in testing — join the test to get it early.</p>
+
+    <ul class="facts">
+      <li>Free, no in-app purchases</li>
+      <li>No account</li>
+      <li>No ads or tracking</li>
+      <li>Works offline</li>
+    </ul>
   </header>
 
   <main>
+    <section class="section" id="how">
+      <div class="wrap-wide">
+        <h2>How it works</h2>
+        <p class="sub">Three taps to set up. After that it comes to you.</p>
+        <div class="steps">
+          <div class="step">
+            <h3>Set your place and method</h3>
+            <p>Use GPS or type your city, then pick from 12 calculation methods and standard or Hanafi Asr so the times match your masjid.</p>
+          </div>
+          <div class="step">
+            <h3>Your phone rings at salah</h3>
+            <p>A full-screen incoming call with its own ringtone — Answer, Snooze, or Decline. Unanswered, it hangs up and calls back a few minutes later, again and again until the window closes.</p>
+          </div>
+          <div class="step">
+            <h3>Answer, and the streak grows</h3>
+            <p>Answering logs the prayer and adds a day. Declining asks you to write down why. Letting one pass in silence resets the streak — no free passes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="note-section" id="honest">
+      <div class="wrap-wide">
+        <div class="note">
+          <h2>Made to be a little uncomfortable</h2>
+          <p>Hayya is for the person who already wants to pray on time and hasn't yet found the thing that makes it happen. If that isn't you, this probably isn't your app.</p>
+          <p>Which is why it doesn't let much slide. It rings like a call, and calls back until the window closes. Snooze works once. Declining takes more than a tap — you have to write down why, in your own words, and Hayya keeps what you wrote and shows it back to you later. A prayer you let pass in silence costs you your streak exactly as much as one you turned down. There are no free passes, and nothing here is designed to make missing a prayer feel neutral.</p>
+          <blockquote class="verse">
+            "Indeed, prayer has been decreed upon the believers at specified times."
+            <cite>Qur'an 4:103</cite>
+          </blockquote>
+          <p>That small weight is the point. It isn't there to shame you — Hayya has no one to report you to, nothing to sell you, and no way to tell anyone what you wrote. It's there so the moment you decide to walk away from a prayer is a moment you actually notice, instead of one that slips quietly past. You can choose how firmly it speaks to you, gentle or firm. Either way, it will ask.</p>
+          <p class="close">Nobody prays perfectly. The streak will break, and Hayya will go on calling anyway — because the next one is the one that matters.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="screenshots">
+      <div class="wrap-wide">
+        <h2>See it</h2>
+        <p class="sub">Screenshots from iPhone. Swipe to browse.</p>
+        <div class="shots">
+          <figure class="shot">
+            <picture>
+              <source srcset="screenshots/01-home.webp" type="image/webp" />
+              <img src="screenshots/01-home.png" alt="Hayya home screen showing the next prayer, the day's five prayer times, and a 12-day streak" width="600" height="1298" loading="lazy" />
+            </picture>
+            <figcaption>Today's times, and your streak</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture>
+              <source srcset="screenshots/02-call.webp" type="image/webp" />
+              <img src="screenshots/02-call.png" alt="Incoming call screen for Isha prayer with Decline and Answer buttons" width="600" height="1298" loading="lazy" />
+            </picture>
+            <figcaption>The call you can't ignore</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture>
+              <source srcset="screenshots/03-meeting.webp" type="image/webp" />
+              <img src="screenshots/03-meeting.png" alt="Meeting-invitation themed alarm screen for Isha prayer with a Join meeting button" width="600" height="1298" loading="lazy" />
+            </picture>
+            <figcaption>Five call themes</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture>
+              <source srcset="screenshots/04-themes.webp" type="image/webp" />
+              <img src="screenshots/04-themes.png" alt="Alarm themes list: surprise me, regular phone call, huddle request, meeting invitation, video call, voice call" width="600" height="1298" loading="lazy" />
+            </picture>
+            <figcaption>Pick a theme, or be surprised</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture>
+              <source srcset="screenshots/05-decline.webp" type="image/webp" />
+              <img src="screenshots/05-decline.png" alt="Decline screen asking why you are declining Isha, with a Qur'anic reminder and a text box for your reason" width="600" height="1298" loading="lazy" />
+            </picture>
+            <figcaption>Declining takes more than a tap</figcaption>
+          </figure>
+          <figure class="shot">
+            <picture>
+              <source srcset="screenshots/06-history.webp" type="image/webp" />
+              <img src="screenshots/06-history.png" alt="History screen listing each prayer over the past days with the time it was logged" width="600" height="1298" loading="lazy" />
+            </picture>
+            <figcaption>Two weeks of honest history</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section class="features" id="features">
-      <div class="wrap">
+      <div class="wrap-wide">
         <h2>Prayer, answered</h2>
         <p class="sub">Five daily prayers, each announced like a call you can't ignore.</p>
         <div class="grid">
           <div class="card">
             <div class="emoji">📞</div>
             <h3>Call-style alarms</h3>
-            <p>At each prayer time your phone rings full-screen like an incoming call, with its own ringtone — over the lock screen.</p>
+            <p>At each prayer time your phone rings full-screen like an incoming call, with its own ringtone. On Android the call takes over the lock screen; on iPhone it arrives as a time-sensitive call notification you tap to answer.</p>
+          </div>
+          <div class="card">
+            <div class="emoji">🔁</div>
+            <h3>It calls back</h3>
+            <p>An unanswered call rings, hangs up, and tries again a few minutes later — until you answer, decline, or the prayer window closes and it's logged as missed.</p>
           </div>
           <div class="card">
             <div class="emoji">📿</div>
-            <h3>Accurate times</h3>
-            <p>Prayer times calculated on-device from your location, with your choice of calculation method and madhab.</p>
+            <h3>Times that match your masjid</h3>
+            <p>12 calculation methods — ISNA, Muslim World League, Umm al-Qura, Egyptian, Karachi, Dubai, Kuwait, Qatar, Singapore, Diyanet, Tehran, Moonsighting Committee — plus standard or Hanafi Asr.</p>
           </div>
           <div class="card">
             <div class="emoji">🔥</div>
-            <h3>Build a streak</h3>
-            <p>Answering logs the prayer and grows your streak. Declining asks for an honest reason, with a gentle reminder.</p>
+            <h3>A streak you have to earn</h3>
+            <p>Answering adds a day. Declining resets it to zero — and so does letting a prayer pass in silence. Tap the streak for a two-week history of every prayer and every reason you wrote.</p>
           </div>
           <div class="card">
-            <div class="emoji">🔒</div>
-            <h3>Private by design</h3>
-            <p>No account, no servers, no tracking. Your location and prayer log never leave your phone.</p>
+            <div class="emoji">⏱️</div>
+            <h3>Ring early when you need to leave</h3>
+            <p>Set alarms to ring up to 30 minutes before the adhan so you reach the masjid on time — one lead time for all, or a different one for each prayer.</p>
           </div>
           <div class="card">
-            <div class="emoji">🎨</div>
-            <h3>Familiar themes</h3>
-            <p>Choose the call style you know — phone, huddle, meeting, video, or voice — each with its own look and sound.</p>
+            <div class="emoji">😴</div>
+            <h3>Snooze once, and only once</h3>
+            <p>Snooze works a single time per prayer, then the button is gone. Declining takes more than a tap: you have to type an honest reason, with a gentle reminder of 4:103.</p>
+          </div>
+          <div class="card">
+            <div class="emoji">🎵</div>
+            <h3>Your own ringtones</h3>
+            <p>Every theme ships with its own tone, and you can replace any of them with an audio file from your device.</p>
           </div>
           <div class="card">
             <div class="emoji">🌙</div>
             <h3>Made with care</h3>
-            <p>Hijri dates, Arabic and English adhan text, and accessibility built in from the start.</p>
+            <p>Hijri dates you can nudge by up to two days to match your local sighting, adhan text in Arabic, English, or both, and reduce-motion and screen-reader support built in from the start.</p>
+          </div>
+          <div class="card">
+            <div class="emoji">✈️</div>
+            <h3>Works with no signal</h3>
+            <p>Prayer times are calculated on your phone, not fetched from a server, so Hayya keeps ringing on a plane, in the mountains, or in airplane mode.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="themes">
+      <div class="wrap-wide">
+        <h2>Five ways to be called</h2>
+        <p class="sub">Every prayer can arrive as a different kind of call, each with its own ringtone.</p>
+        <div class="themes">
+          <div class="theme"><span class="name">Regular phone call</span><span class="tone">Classic Ring</span></div>
+          <div class="theme"><span class="name">Huddle request</span><span class="tone">Lo-fi Bongos</span></div>
+          <div class="theme"><span class="name">Meeting invitation</span><span class="tone">Boardroom Ring</span></div>
+          <div class="theme"><span class="name">Video call</span><span class="tone">Glass Chime</span></div>
+          <div class="theme"><span class="name">Voice call</span><span class="tone">Signature Marimba</span></div>
+          <div class="theme"><span class="name">Surprise me</span><span class="tone">A different one each prayer</span></div>
+        </div>
+        <p class="themes-note">Every ringtone was synthesised from scratch for Hayya — no samples, no third-party audio.</p>
+      </div>
+    </section>
+
+    <section class="band" id="privacy">
+      <div class="wrap-wide">
+        <h2>Private, because there's nowhere for it to go</h2>
+        <p class="sub">Hayya has no backend. There is no server to send your prayers to, and no account to attach them to.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>No account</h3>
+            <p>Open the app and start. No sign-up, no email, no profile.</p>
+          </div>
+          <div class="card">
+            <h3>No servers</h3>
+            <p>Your location, settings, streak, and written reasons never leave your phone.</p>
+          </div>
+          <div class="card">
+            <h3>No analytics or ads</h3>
+            <p>Nothing tracks what you do in the app, and there is nothing to sell you.</p>
+          </div>
+          <div class="card">
+            <h3>Yours to delete</h3>
+            <p>Uninstalling Hayya removes every trace of it from your device.</p>
+          </div>
+        </div>
+        <p class="band-foot"><a href="privacy.html">Read the full privacy policy →</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap-wide">
+        <h2>Questions</h2>
+        <p class="sub">The short answers. There are more on the <a href="support.html">support page</a>.</p>
+        <div class="faq">
+          <details>
+            <summary>Is Hayya free?</summary>
+            <p>Yes — free to download, with no in-app purchases, no subscription, and no ads.</p>
+          </details>
+          <details>
+            <summary>What do I need to run it?</summary>
+            <p>An iPhone on iOS 16.4 or later, or an Android phone. The App Store listing is live now; the Android build is in testing.</p>
+          </details>
+          <details>
+            <summary>Does it need internet?</summary>
+            <p>No. Prayer times are calculated on your device from your coordinates, so everything works offline. You only need a connection if you want to look up a city by name.</p>
+          </details>
+          <details>
+            <summary>Why does it ask for my location?</summary>
+            <p>Prayer times depend on the sun's position, which depends on where you are. Hayya takes a single reading and computes the times on your phone — the coordinates are never sent anywhere. You can skip the permission entirely and type your city instead.</p>
+          </details>
+          <details>
+            <summary>Will the alarm wake me for Fajr?</summary>
+            <p>That's what it's built for. Alarms are exact and are rescheduled after a restart. On Android, Hayya walks you through the two system settings that stop the OS delaying alarms — "Alarms &amp; reminders" access and a battery-optimization exemption.</p>
+          </details>
+          <details>
+            <summary>Can I try the alarm without waiting for a prayer?</summary>
+            <p>Yes. The Preview button on the home screen rings the full call, exactly as it will at prayer time. It's a dry run — it doesn't touch your log or streak.</p>
+          </details>
+          <details>
+            <summary>What happens if I miss one?</summary>
+            <p>A prayer whose window closes unanswered is logged as missed and resets the streak. If you actually prayed but forgot to log it, you can mark it as prayed on time from the history screen.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="download">
+      <div class="wrap">
+        <img class="mark" src="assets/crescent.png" alt="" width="76" height="76" />
+        <h2>Come to prayer. Come to success.</h2>
+        <p>Free, private, and offline. Five calls a day that are worth answering.</p>
+        <div class="store-badges">
+          <a href="https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268" aria-label="Download Hayya on the App Store">
+            <img src="assets/badge-app-store.svg" alt="Download on the App Store" width="156" height="52" />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya" aria-label="Get Hayya on Google Play">
+            <img src="assets/badge-google-play.png" alt="Get it on Google Play" width="150" height="52" />
+          </a>
+        </div>
+        <p class="store-note">iPhone requires iOS 16.4 or later. The Android build is currently in testing.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-foot">
-    <div class="wrap">
+    <div class="wrap-wide">
       <div>© 2026 Hayya</div>
       <div class="foot-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
         <a href="support.html">Support</a>
+        <a href="mailto:rushan52@gmail.com">Contact</a>
+      </div>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268" aria-label="Download Hayya on the App Store">
+          <img src="assets/badge-app-store.svg" alt="Download on the App Store" width="114" height="38" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya" aria-label="Get Hayya on Google Play">
+          <img src="assets/badge-google-play.png" alt="Get it on Google Play" width="109" height="38" />
+        </a>
       </div>
     </div>
   </footer>

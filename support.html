@@ -4,17 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Support — Hayya</title>
-  <meta name="description" content="Get help with Hayya, the prayer-times call alarm app." />
+  <meta name="description" content="Get help with Hayya, the prayer-times call alarm app. Setup, alarm reliability, prayer-time accuracy, and how to contact us." />
+  <link rel="canonical" href="https://saiyedrushan.github.io/hayya-site/support.html" />
+  <meta name="theme-color" content="#0c2b21" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Hayya" />
+  <meta property="og:title" content="Support — Hayya" />
+  <meta property="og:description" content="Get help with Hayya, the prayer-times call alarm app. Setup, alarm reliability, prayer-time accuracy, and how to contact us." />
+  <meta property="og:url" content="https://saiyedrushan.github.io/hayya-site/support.html" />
+  <meta property="og:image" content="https://saiyedrushan.github.io/hayya-site/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <nav class="site-nav">
-    <div class="wrap">
-      <a class="brand" href="index.html"><span class="dot"></span><span>Hayya</span></a>
+    <div class="wrap-wide">
+      <a class="brand" href="index.html"><img src="assets/icon-192.png" alt="" width="28" height="28" /><span>Hayya</span></a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="privacy.html">Privacy</a>
         <a href="support.html">Support</a>
+        <a class="nav-cta" href="index.html#download">Get the app</a>
       </div>
     </div>
   </nav>
@@ -28,32 +48,87 @@
         <strong>Contact:</strong> Email us at <a href="mailto:rushan52@gmail.com">rushan52@gmail.com</a> and we'll get back to you.
       </div>
 
-      <h2>Frequently asked questions</h2>
+      <h2>Getting started</h2>
+
+      <h3>What do I need to run Hayya?</h3>
+      <p>An iPhone running iOS 16.4 or later, or an Android phone. Hayya is free, has no in-app purchases, and needs no account. It is available on the <a href="https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268">App Store</a>; the <a href="https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya">Android build</a> is currently in testing.</p>
+
+      <h3>How do I set it up?</h3>
+      <p>Open Settings and set your location — either let Hayya read it once from GPS, or type your city. Then choose the calculation method and Asr madhab your masjid follows. That's it; the alarms schedule themselves.</p>
+
+      <h3>Can I hear the alarm without waiting for a prayer?</h3>
+      <p>Yes. The Preview button at the bottom of the Home screen rings the full call for the next prayer, exactly as it will fire for real. It's a dry run — it doesn't touch your prayer log or your streak.</p>
+
+      <h2>Alarms</h2>
 
       <h3>My alarms aren't going off on time.</h3>
-      <p>Hayya relies on your phone's exact-alarm and notification permissions. Make sure notifications are enabled for Hayya, that exact alarms are allowed, and that battery optimization is turned off for the app so the system doesn't delay it. On some devices you may need to allow Hayya to run in the background.</p>
+      <p>Hayya relies on your phone's exact-alarm and notification permissions. Make sure notifications are enabled for Hayya, that exact alarms are allowed, and that battery optimization is turned off for the app so the system doesn't delay it. On Android, Settings → Alarm reliability walks you through both settings and shows which ones still need granting. On some devices you may also need to allow Hayya to run in the background.</p>
 
       <h3>The full-screen "call" alarm doesn't appear over my lock screen.</h3>
-      <p>Please grant Hayya permission to display over other apps and to show full-screen notifications. These let the alarm surface over the lock screen.</p>
+      <p>On Android, please grant Hayya permission to display over other apps and to show full-screen notifications — these let the alarm surface over the lock screen. On Android 14 and later, apps installed from Play may additionally need "Full screen notifications" switched on in system settings.</p>
+      <p>On iPhone, the alarm arrives as a time-sensitive notification with your ringtone rather than a lock-screen takeover; tapping it opens the call screen. Allowing Time Sensitive Notifications for Hayya (and keeping it out of a Focus filter) makes sure it comes through.</p>
+
+      <h3>What happens if I don't answer?</h3>
+      <p>The call rings for a couple of minutes, hangs up, and calls back a few minutes later — over and over until you answer it, decline it, or the prayer's window closes, at which point it's logged as missed. Those automatic call-backs don't spend your one snooze.</p>
+
+      <h3>Can I snooze more than once?</h3>
+      <p>No — deliberately. Snooze works once per prayer, then the button is gone.</p>
+
+      <h3>Can I be called before the adhan?</h3>
+      <p>Yes. In Settings you can make every alarm ring up to 30 minutes early so you have time to reach the masjid, or give each prayer its own lead time.</p>
+
+      <h3>Can I use my own ringtone?</h3>
+      <p>Yes. Each theme ships with its own tone, and you can replace any of them with an audio file from your device.</p>
+
+      <h2>Prayer times and history</h2>
 
       <h3>My prayer times look wrong.</h3>
-      <p>Check that your location is correct and pick the calculation method and madhab used in your region in Settings. You can also adjust the Hijri date by a day or two if it differs from your local sighting.</p>
+      <p>Check that your location is correct and pick the calculation method and madhab used in your region in Settings — Hayya supports 12 methods (ISNA, Muslim World League, Umm al-Qura, Egyptian, Karachi, Dubai, Kuwait, Qatar, Singapore, Diyanet, Tehran, and the Moonsighting Committee), plus standard or Hanafi Asr.</p>
+
+      <h3>The Hijri date is a day off.</h3>
+      <p>Hijri dates vary with local sighting. Settings lets you shift the date by up to two days in either direction to match your community.</p>
+
+      <h3>Does Hayya work offline?</h3>
+      <p>Yes. Prayer times are calculated on your device from your coordinates, so the app works with no connection at all. A connection is only needed if you want to look up a city by name.</p>
+
+      <h3>How does the streak work?</h3>
+      <p>Answering a prayer adds a day. Declining one resets it to zero — and so does letting a prayer pass in silence. Tap the streak card for a two-week history of every prayer, the time it was logged, and the reasons you wrote for the ones you declined.</p>
+
+      <h3>I prayed but forgot to log it.</h3>
+      <p>Open the history from the streak card and mark that prayer as prayed on time.</p>
+
+      <h2>Privacy and data</h2>
 
       <h3>Is my data private?</h3>
-      <p>Yes. Hayya keeps everything on your device — no account, no servers, no tracking. See our <a href="privacy.html">Privacy Policy</a>.</p>
+      <p>Yes. Hayya keeps everything on your device — no account, no servers, no analytics, no ads. See our <a href="privacy.html">Privacy Policy</a>.</p>
+
+      <h3>Why does Hayya ask for my location?</h3>
+      <p>Prayer times depend on the sun's position, which depends on where you are. Hayya takes a single foreground reading and computes the times on your phone; the coordinates are never transmitted. If you'd rather not grant the permission, type your city instead.</p>
 
       <h3>How do I reset my data?</h3>
       <p>Uninstalling Hayya removes all of its data from your device.</p>
+
+      <h2>Still stuck?</h2>
+      <p>Email <a href="mailto:rushan52@gmail.com">rushan52@gmail.com</a> with your phone model and OS version and we'll help. Bug reports and feature requests are welcome too.</p>
     </div>
   </main>
 
   <footer class="site-foot">
-    <div class="wrap">
+    <div class="wrap-wide">
       <div>© 2026 Hayya</div>
       <div class="foot-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
         <a href="support.html">Support</a>
+        <a href="mailto:rushan52@gmail.com">Contact</a>
+      </div>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268" aria-label="Download Hayya on the App Store">
+          <img src="assets/badge-app-store.svg" alt="Download on the App Store" width="114" height="38" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya" aria-label="Get it on Google Play">
+          <img src="assets/badge-google-play.png" alt="Get it on Google Play" width="109" height="38" />
+        </a>
       </div>
     </div>
   </footer>
