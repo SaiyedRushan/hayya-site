@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Hayya</title>
-  <meta name="description" content="Hayya's privacy policy. Hayya does not collect, store, or transmit your personal data. Everything stays on your device." />
+  <meta name="description" content="Hayya's privacy policy. Hayya does not collect your personal data — your location, prayer history, and settings stay on your device." />
   <link rel="canonical" href="https://saiyedrushan.github.io/hayya-site/privacy.html" />
   <meta name="theme-color" content="#0c2b21" />
 
@@ -17,7 +17,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Hayya" />
   <meta property="og:title" content="Privacy Policy — Hayya" />
-  <meta property="og:description" content="Hayya's privacy policy. Hayya does not collect, store, or transmit your personal data. Everything stays on your device." />
+  <meta property="og:description" content="Hayya's privacy policy. Hayya does not collect your personal data — your location, prayer history, and settings stay on your device." />
   <meta property="og:url" content="https://saiyedrushan.github.io/hayya-site/privacy.html" />
   <meta property="og:image" content="https://saiyedrushan.github.io/hayya-site/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
@@ -42,17 +42,18 @@
   <main class="doc">
     <div class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="eff">Effective date: 21 July 2026</p>
+      <p class="eff">Effective date: 10 August 2026</p>
 
       <div class="tldr">
         <h2>The short version</h2>
-        <p>Hayya does not collect your personal data. There is no account to create, no analytics, no advertising, and no servers that receive your information. Everything the app uses — your location, settings, and prayer history — is processed and stored entirely on your own device.</p>
+        <p>Hayya does not collect your personal data. There is no account to create, no analytics SDK, and no advertising. Everything the app uses — your location, settings, and prayer history — is processed and stored entirely on your own device. The app does contact one external service: on launch it checks Expo's update service for a new version of the app, which makes your IP address and basic device information visible to Expo. Nothing about your prayers, location, or settings is ever included in that request, and the app works fully offline.</p>
       </div>
 
       <p>This Privacy Policy explains how the Hayya mobile application ("Hayya", "the app", "we", "us") handles information. By using Hayya you agree to this policy.</p>
 
       <h2>1. Information we collect</h2>
-      <p><strong>We do not collect any personal information.</strong> Hayya has no user accounts, no login, and no backend servers that store your data. We do not receive your location, your prayer records, your settings, or any identifier from your device.</p>
+      <p><strong>We do not collect any personal information.</strong> Hayya has no user accounts, no login, and no backend servers of ours that store your data. We do not receive your location, your prayer records, your settings, or any identifier from your device.</p>
+      <p>We run no servers of our own, but the app does rely on one third-party service. To let us ship fixes without waiting on an app store review, Hayya uses Expo's over-the-air update service. Each time the app launches it asks that service whether a newer version of the app's code is available. See <a href="#updates">section 6</a> for exactly what that involves.</p>
 
       <h2>2. Information processed on your device</h2>
       <p>Hayya needs certain information to work, but this information stays on your phone and is never transmitted to us or to any third party:</p>
@@ -69,15 +70,17 @@
       <p>Your preferences (calculation method, madhab, alarm sound, theme, adhan language and similar), along with your prayer log — including which prayers you accepted or declined, your streak, and any written reasons you enter when declining — are saved in local storage on your device only. This data never leaves your phone and is not accessible to us. Uninstalling the app deletes it.</p>
 
       <h3>Notifications and alarms</h3>
-      <p>Prayer alarms are scheduled locally on your device using its notification and alarm systems. No push notifications are sent from any server; there is no server involved.</p>
+      <p>Prayer alarms are scheduled locally on your device using its notification and alarm systems. We send no push notifications, and no server is involved in your alarms firing — they work with no connection at all.</p>
 
       <h2>3. Information we do NOT collect</h2>
       <ul>
         <li>Name, email address, phone number, or contacts</li>
-        <li>Advertising identifiers or device identifiers</li>
-        <li>Usage analytics, crash analytics, or behavioral tracking</li>
+        <li>Advertising identifiers</li>
+        <li>Your location, prayer history, streak, settings, or anything you write in the app</li>
+        <li>Any behavioural tracking or advertising/analytics SDK inside the app</li>
         <li>Any data shared with advertisers or data brokers</li>
       </ul>
+      <p>One clarification, so this list isn't misleading: because the app contacts Expo's update service on launch (<a href="#updates">section 6</a>), Expo can count app launches and see the IP addresses those launches come from. We do not use that as an analytics product, but it is aggregate usage information that exists as a by-product, and we would rather say so than claim none exists.</p>
 
       <h2>4. Device permissions and why they are used</h2>
       <ul>
@@ -91,22 +94,34 @@
       <p>Granting these permissions does not send any data to us; they only allow the app to function on your device.</p>
 
       <h2>5. Third parties</h2>
-      <p>Hayya does not share data with third parties. The only external services involved are the operating system's own location and geocoding services (Apple or Google), which your device uses to turn a city name or GPS reading into coordinates. Their handling of that request is governed by your device maker's privacy policy. We do not integrate any advertising, analytics, or tracking SDKs.</p>
+      <p>We do not sell or share your personal data with third parties, and we do not integrate any advertising or analytics SDK. Two external services are involved in running the app:</p>
+      <ul>
+        <li><strong>Your device's operating system</strong> (Apple or Google) provides the location and geocoding that turn a city name or GPS reading into coordinates. Their handling of that request is governed by your device maker's privacy policy.</li>
+        <li><strong>Expo</strong> (Expo, Inc.) provides the over-the-air update service described in the next section, acting as a processor on our behalf.</li>
+      </ul>
 
-      <h2>6. Children's privacy</h2>
+      <h2 id="updates">6. App updates and Expo</h2>
+      <p>Hayya is built with Expo, and uses Expo's update service so that fixes can reach you without waiting for an app store review. This is the app's only network request of its own.</p>
+      <p><strong>What happens:</strong> when the app launches, it asks Expo's servers (<code>u.expo.dev</code>) whether a newer version of the app's JavaScript code is available for your app version. If so, it downloads it and applies it the next time the app starts.</p>
+      <p><strong>What Expo can see:</strong> as with any web request, your IP address (which approximates your city, not a precise location) along with basic technical details needed to answer it — your app version, runtime version, and platform. Expo can therefore count app launches and unique devices in aggregate.</p>
+      <p><strong>What is never sent:</strong> your GPS coordinates, chosen city, prayer times, prayer log, streak, written notes, settings, or any account or advertising identifier. None of this leaves your device, and none of it is included in the update check.</p>
+      <p><strong>Offline:</strong> the update check never blocks the app from starting. If you have no connection, or block the request, Hayya works exactly as it always does — prayer times are still calculated on your device and alarms still fire.</p>
+      <p>Expo's privacy policy is available at <a href="https://expo.dev/privacy" rel="noopener">expo.dev/privacy</a>.</p>
+
+      <h2>7. Children's privacy</h2>
       <p>Hayya is suitable for all ages and does not knowingly collect any information from anyone, including children.</p>
 
-      <h2>7. Data security and retention</h2>
-      <p>Because your data never leaves your device, it is protected by your device's own security. We retain nothing on our side because we collect nothing. You can clear all app data at any time by uninstalling Hayya.</p>
+      <h2>8. Data security and retention</h2>
+      <p>Your prayer data, location, and settings never leave your device, so they are protected by your device's own security, and we retain nothing of them because we never receive them. You can clear all app data at any time by uninstalling Hayya. Connection metadata from the update check is retained by Expo under their own policy, not by us.</p>
 
-      <h2>8. Changes to this policy</h2>
+      <h2>9. Changes to this policy</h2>
       <p>We may update this policy from time to time. Material changes will be reflected on this page with a new effective date.</p>
 
-      <h2>9. Contact</h2>
+      <h2>10. Contact</h2>
       <p>If you have any questions about this Privacy Policy, contact us at <a href="mailto:rushan52@gmail.com">rushan52@gmail.com</a>.</p>
 
       <div class="callout">
-        <strong>Data safety summary:</strong> No data collected. No data shared. Data is processed on-device only. This matches Hayya's Google Play Data safety declaration.
+        <strong>Data safety summary:</strong> We collect no personal data. Your location, prayer history, and settings are processed on-device only and are never transmitted. The app contacts Expo's update service on launch, which makes your IP address and app/device version visible to Expo as our processor; this is used to deliver updates, not to build a profile of you. This matches Hayya's Google Play Data safety declaration.
       </div>
     </div>
   </main>
