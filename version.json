@@ -1,0 +1,22 @@
+{
+  "_comment": "Source of truth for the in-app 'update available' sheet. Publish a byte-identical copy to https://saiyedrushan.github.io/hayya-site/version.json once a build is live on the store. Full instructions: CICD.md, 'Announcing a store update'.",
+  "version": "1.1.0",
+  "notes": [
+    "Prayer times on your home and lock screens, as widgets",
+    "Fajr can ask you to say the waking duʿā out loud before it will fall silent",
+    "Your own alarms, set alongside the prayers",
+    "Dark mode, following whatever the phone is set to"
+  ],
+  "required": false,
+  "ios": {
+    "_comment": "The App Store is still serving 1.0.1 (released 14 Aug); Play's closed-testing track went to 1.1.0 on 18 Aug. Holding iOS at the version actually downloadable there — offering 1.1.0 would send iPhone users to a listing that hasn't got it. Delete this whole block once 1.1.0 is live on the App Store, and iOS falls through to the fields above.",
+    "version": "1.0.1",
+    "notes": [
+      "Morning and evening adhkār, with a checklist that opens to the right list for the time of day",
+      "After-prayer adhkār, a few minutes after you answer the call",
+      "Dhuhr reads as Jumuʿah on Fridays, and a slot can take an exact jamāʿah time",
+      "Fixed: on iPhone the prayer call rang for about two seconds, then went quiet",
+      "Fixed: the morning adhkār reminder could vanish from the shade before you woke up"
+    ]
+  }
+}
