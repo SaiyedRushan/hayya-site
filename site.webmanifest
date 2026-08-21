@@ -1,7 +1,7 @@
 {
   "name": "Hayya: Prayer Alarm",
   "short_name": "Hayya",
-  "description": "Prayer times that ring like an incoming call. Answer, and never miss salah.",
+  "description": "Prayer times that ring like an incoming call. Answer, and pray on time.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
