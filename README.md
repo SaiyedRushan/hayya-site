@@ -24,9 +24,9 @@ drop both lines once the app is live on Play.
 
 ## Assets
 
-Everything under `assets/` and `screenshots/` is generated, so it can be regenerated rather
-than hand-edited. Both scripts expect the app repo checked out beside this one
-(`../hayya`).
+Everything under `assets/`, `screenshots/` and `collages/` is generated, so it can be
+regenerated rather than hand-edited. Both scripts expect the app repo checked out beside
+this one (`../hayya`), or take its path as an argument.
 
 ### Icons, favicons, and the social card
 
@@ -49,16 +49,25 @@ tab is the icon on the home screen. Pure Node — no image libraries. Writes:
 `assets/favicon.svg` is hand-written to the same geometry and is what modern browsers use.
 If the app icon ever changes, update both it and `tools/generate-icons.js`.
 
-### Screenshots
+### Screenshots and collages
 
 ```bash
 tools/sync-screenshots.sh [path-to-hayya-repo]
 ```
 
-Takes six of the App Store masters from `../hayya/store/screenshots-ios-1284x2778`, resizes
-them to 600px wide, and writes a WebP (what browsers load) plus a PNG fallback for each. The
-six and their order are set at the top of the script. Needs `cwebp` (`brew install webp`);
-`sips` is built into macOS.
+Two sets, both from the app repo's store art:
+
+- **`screenshots/`** — ten App Store masters from `store/revamp/ios-1284x2778-raw`, resized
+  to 600px wide, as a WebP (what browsers load) plus a PNG fallback. These are the `#screenshots`
+  carousel.
+- **`collages/`** — six wide feature collages from `store/revamp/collages`, resized to 1600px
+  wide, as a WebP plus a **JPEG** fallback — their large soft gradients cost far more as PNG
+  than the artefacts cost as JPEG. One leads the themes section; the other five are the
+  `#tour` "A closer look" section.
+
+Which files, and their order, are set at the top of the script. It falls back to the old
+`store/screenshots-ios-1284x2778` folder if the revamp one isn't there. Needs `cwebp`
+(`brew install webp`); `sips` is built into macOS.
 
 ### Store badges
 

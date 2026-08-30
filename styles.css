@@ -176,6 +176,18 @@ img { max-width: 100%; }
 .theme .tone { color: var(--muted); font-size: 14px; margin-left: auto; white-space: nowrap; }
 .themes-note { text-align: center; color: var(--muted); font-size: 15px; margin: 24px 0 0; }
 
+/* Wide feature collages — "A closer look", and the one leading the themes list */
+.wide-shot { margin: 0 0 34px; }
+.wide-shot img, .tour img {
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius);
+  border: 1px solid rgba(12, 43, 33, .12);
+  box-shadow: 0 12px 34px rgba(12, 43, 33, .12);
+}
+.tour { display: grid; gap: 40px; }
+.tour figure { margin: 0; }
+.tour figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); text-align: center; }
+
 /* Dark band (privacy) */
 .band {
   background: linear-gradient(160deg, var(--green), var(--green-deep));
