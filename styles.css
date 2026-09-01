@@ -143,6 +143,18 @@ img { max-width: 100%; }
 }
 .shot figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); }
 
+/* Promo video */
+.video-frame { display: flex; justify-content: center; }
+.video-frame video {
+  /* Same reasoning as .shot img — the width/height attributes are
+     presentational hints, so height:auto keeps the 9:16 frame from stretching. */
+  width: 100%; max-width: 320px; height: auto; display: block;
+  border-radius: 26px;
+  border: 1px solid rgba(12, 43, 33, .12);
+  box-shadow: 0 14px 34px rgba(12, 43, 33, .14);
+  background: var(--green);
+}
+
 /* Steps */
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; counter-reset: step; }
 .step { counter-increment: step; }
