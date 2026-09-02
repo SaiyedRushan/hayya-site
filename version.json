@@ -1,11 +1,13 @@
 {
   "_comment": "Source of truth for the in-app 'update available' sheet. Publish a byte-identical copy to https://saiyedrushan.github.io/hayya-site/version.json once a build is live on the store. Full instructions: CICD.md, 'Announcing a store update'.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "notes": [
-    "Prayer times on your home and lock screens, as widgets",
-    "Fajr can ask you to say the waking duʿā out loud before it will fall silent",
-    "Your own alarms, set alongside the prayers",
-    "Dark mode, following whatever the phone is set to"
+    "Hayya now tells you what changed, and Settings → About → What’s new keeps the earlier notes",
+    "Declining a call offers reasons to tap, and can have it call back in 20 to 60 minutes instead",
+    "The after-salah list ends on a card for your own duʿās — add, tick, and keep them on your phone only",
+    "Every list gets a Mark all as done at the bottom",
+    "Large system text fits again: prayer times, the date, the Sunrise row and Arabic titles no longer overflow",
+    "The keyboard no longer hides Decline while you type a reason"
   ],
   "required": false
 }
