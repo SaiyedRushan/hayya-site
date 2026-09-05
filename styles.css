@@ -48,7 +48,7 @@ img { max-width: 100%; }
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   height: 62px;
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--green); }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--green); flex-shrink: 0; }
 .brand img { width: 28px; height: 28px; border-radius: 8px; display: block; }
 .brand span { font-family: Georgia, "Times New Roman", serif; font-size: 20px; letter-spacing: .3px; }
 .nav-links { display: flex; align-items: center; gap: 22px; font-size: 15px; }
@@ -329,8 +329,24 @@ img { max-width: 100%; }
   .nav-only-wide { display: none; }
 }
 
+/* Narrow screens: let the links drop onto their own row under the brand
+   instead of running into it. Links are nowrap, so without this the row
+   overflows and overlaps the logo. */
+@media (max-width: 640px) {
+  .site-nav .wrap-wide {
+    flex-wrap: wrap; height: auto; min-height: 62px;
+    padding-top: 10px; padding-bottom: 10px; row-gap: 8px;
+  }
+  .nav-links {
+    margin-left: auto; flex-wrap: wrap; justify-content: flex-end;
+    row-gap: 8px; column-gap: 16px;
+  }
+  .nav-links .nav-cta { padding: 6px 14px; }
+  html { scroll-padding-top: 120px; }
+}
+
 @media (max-width: 520px) {
-  .nav-links { gap: 14px; font-size: 14px; }
+  .nav-links { column-gap: 14px; font-size: 14px; }
   .brand span { font-size: 18px; }
   .store-badges img { height: 46px; }
   .site-foot .wrap-wide { justify-content: center; text-align: center; }
