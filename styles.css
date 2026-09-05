@@ -329,20 +329,9 @@ img { max-width: 100%; }
   .nav-only-wide { display: none; }
 }
 
-/* Narrow screens: let the links drop onto their own row under the brand
-   instead of running into it. Links are nowrap, so without this the row
-   overflows and overlaps the logo. */
+/* Phones: only the brand and the "Get the app" button stay in the nav. */
 @media (max-width: 640px) {
-  .site-nav .wrap-wide {
-    flex-wrap: wrap; height: auto; min-height: 62px;
-    padding-top: 10px; padding-bottom: 10px; row-gap: 8px;
-  }
-  .nav-links {
-    margin-left: auto; flex-wrap: wrap; justify-content: flex-end;
-    row-gap: 8px; column-gap: 16px;
-  }
-  .nav-links .nav-cta { padding: 6px 14px; }
-  html { scroll-padding-top: 120px; }
+  .nav-links a:not(.nav-cta) { display: none; }
 }
 
 @media (max-width: 520px) {
