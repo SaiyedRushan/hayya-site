@@ -1,13 +1,13 @@
 {
   "_comment": "Source of truth for the in-app 'update available' sheet. Publish a byte-identical copy to https://saiyedrushan.github.io/hayya-site/version.json once a build is live on the store. Full instructions: CICD.md, 'Announcing a store update'.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "notes": [
-    "Hayya now tells you what changed, and Settings → About → What’s new keeps the earlier notes",
-    "Declining a call offers reasons to tap, and can have it call back in 20 to 60 minutes instead",
-    "The after-salah list ends on a card for your own duʿās — add, tick, and keep them on your phone only",
-    "Every list gets a Mark all as done at the bottom",
-    "Large system text fits again: prayer times, the date, the Sunrise row and Arabic titles no longer overflow",
-    "The keyboard no longer hides Decline while you type a reason"
+    "A small friend on the home screen — a brother in a kufi or a sister in hijab — whose strength is your last seven days and whose face is the last few hours",
+    "Tap the card for the full picture: a day-by-day bar, today’s tally, a shield for a perfect yesterday, a glow for a whole week kept",
+    "A Companion widget for the home screen, on both platforms, that keeps up with the day while the app is closed",
+    "Nothing about the companion is stored — the prayer log is the only source, so marking a prayer late heals retroactively and unmarking takes it back",
+    "The lock screen’s Now and next widget now gives Sunrise its own row while Show sunrise is on",
+    "Ticking a card on the adhkar, after-salah, Friday and My duas lists gives a small tap under your finger — Settings → Adhkar → Vibrate on tick turns it off"
   ],
   "required": false
 }
