@@ -296,6 +296,26 @@ img { max-width: 100%; }
 .app-card p { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
 .app-card .go { margin-top: 16px; font-size: 14px; font-weight: 600; color: var(--green); }
 
+/* The MugUp decks card: full row, head on the left, deck rows on the right.
+   Not a link itself, so it neither lifts nor recolours on hover. */
+.decks-card { grid-column: 1 / -1; flex-direction: row; gap: 28px; cursor: default; }
+.decks-card:hover { transform: none; box-shadow: none; border-color: var(--line); }
+.decks-card .decks-head { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; }
+.decks-card .go:hover { text-decoration: underline; }
+.decks-card .decks {
+  flex: 1.15 1 0; min-width: 0; list-style: none; margin: 0; padding: 0 0 0 18px;
+  border-left: 2px solid rgba(201, 162, 75, .45); display: flex; flex-direction: column; justify-content: center; gap: 12px;
+}
+.decks-card .decks a { display: flex; align-items: center; gap: 10px; color: var(--ink); }
+.decks-card .decks a:hover { text-decoration: none; }
+.decks-card .decks a > span { flex: 1; min-width: 0; }
+.decks-card .decks strong { display: block; font-size: 15px; font-weight: 600; }
+.decks-card .decks a:hover strong { color: var(--green); }
+.decks-card .decks small { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+.decks-card .decks a::after { content: "→"; color: var(--green); opacity: .55; transition: transform .15s ease, opacity .15s ease; }
+.decks-card .decks a:hover::after { transform: translateX(3px); opacity: 1; }
+@media (max-width: 640px) { .decks-card { flex-direction: column; gap: 18px; } }
+
 /* Legal / content pages */
 .doc { padding: 56px 0 80px; }
 .doc h1 { font-family: Georgia, serif; font-size: clamp(30px, 5vw, 42px); color: var(--green); margin: 0 0 6px; font-weight: 600; }
