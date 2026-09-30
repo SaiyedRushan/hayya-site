@@ -69,6 +69,24 @@ Which files, and their order, are set at the top of the script. It falls back to
 `store/screenshots-ios-1284x2778` folder if the revamp one isn't there. Needs `cwebp`
 (`brew install webp`); `sips` is built into macOS.
 
+### Watch pictures
+
+```bash
+tools/sync-watch.sh [path-to-hayya-repo] [path-to-hayya-wear-repo]
+```
+
+Fills `watch/`, the pictures in the `#wrist` section, from two repos:
+
+- **Wear OS**: the app, tile and call from `hayya-wear/store/screens`, and five of the
+  faces from `hayya-wear/store/faces` (one per style, each in a different colour). These
+  are drawn by hayya-wear's scripts, not captured, and are round with transparent
+  corners. Resized to 440px, WebP plus PNG, corners kept transparent.
+- **Apple Watch**: four simulator captures from the app repo's `store/watch`, copied at
+  their own 374x446. While that folder only exists on `build-train`, the script reads it
+  from git (`WATCH_BRANCH`, default `origin/build-train`).
+
+Which files, and their names on the site, are set at the top of the script. Needs `cwebp`.
+
 ### Store badges
 
 `assets/badge-app-store.svg` and `assets/badge-google-play.png` are the official badges:
