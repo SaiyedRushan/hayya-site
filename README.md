@@ -18,9 +18,7 @@ Both are hard-coded in `index.html` (hero + closing CTA) and in the footer of ev
 - App Store — `https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268`
 - Google Play — `https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya`
 
-The Play listing is **not public yet** (the build is in testing, so the URL 404s for
-visitors). The hero carries a "Android is in testing" note and the closing CTA repeats it —
-drop both lines once the app is live on Play.
+Both listings are public. Google Play went live on 2026-10-01.
 
 ## Assets
 
