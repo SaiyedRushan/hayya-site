@@ -2,7 +2,11 @@
 
 Static marketing + legal site for the [Hayya](https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268) app. Plain HTML, CSS and one JavaScript module. No build step, no dependencies, and no requests to anyone else's servers except the city search, which only runs when a visitor searches.
 
-Live at <https://saiyedrushan.github.io/hayya-site/>.
+Live at <https://hayyaprayer.com/>. The domain is registered at Porkbun, which points it at
+GitHub Pages (four A and four AAAA records for the root, and `www` as a CNAME to
+`saiyedrushan.github.io`). The `CNAME` file in this repo tells Pages to serve the site there.
+The old address, saiyedrushan.github.io/hayya-site/, redirects to it, so the links already
+in the app (share, support, and the `version.json` update check) keep working.
 
 | Page | File | Use in the stores |
 |---|---|---|
@@ -99,8 +103,8 @@ Fonts are the app's own, Amiri and Figtree, served from `assets/fonts/` (`assets
 - `llms.txt` is a plain description of Hayya for AI assistants. Keep its facts (version,
   requirements, features) in step with the page.
 - `sitemap.xml` carries a `lastmod` per page. Bump it when a page changes.
-- There is no `robots.txt`: it only counts at the root of a domain, and this site lives under
-  `/hayya-site/`. A custom domain would fix that, and let `llms.txt` sit at the root too.
+- `robots.txt` allows every crawler, AI crawlers included, and points at the sitemap. It and
+  `llms.txt` work because the site is at the root of hayyaprayer.com.
 
 ### Duʿās
 

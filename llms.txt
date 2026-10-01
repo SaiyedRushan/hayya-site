@@ -44,10 +44,10 @@ Checked on 1 October 2026 from each app's US App Store and Google Play listing:
 
 ## Links
 
-- [Home page](https://saiyedrushan.github.io/hayya-site/): live prayer times for your location, every duʿā, what's new, and the FAQ
+- [Home page](https://hayyaprayer.com/): live prayer times for your location, every duʿā, what's new, and the FAQ
 - [Hayya on the App Store](https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268): iPhone and Apple Watch
 - [Hayya on Google Play](https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya): Android and Wear OS
-- [Support](https://saiyedrushan.github.io/hayya-site/support.html): setup, making sure alarms ring, prayer time accuracy, watches
-- [Privacy policy](https://saiyedrushan.github.io/hayya-site/privacy.html)
-- [The lantern](https://saiyedrushan.github.io/hayya-site/companion.html): every state and what it means
+- [Support](https://hayyaprayer.com/support.html): setup, making sure alarms ring, prayer time accuracy, watches
+- [Privacy policy](https://hayyaprayer.com/privacy.html)
+- [The lantern](https://hayyaprayer.com/companion.html): every state and what it means
 - Contact: rushan52@gmail.com

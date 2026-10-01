@@ -1,0 +1,7 @@
+# Everyone is welcome to read and index this site, search engines and AI
+# assistants alike. A plain description of Hayya for AI assistants is at
+# https://hayyaprayer.com/llms.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://hayyaprayer.com/sitemap.xml
