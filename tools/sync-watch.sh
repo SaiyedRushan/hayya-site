@@ -78,3 +78,19 @@ for pair in $APPLE; do
   cwebp -quiet -q 84 "$OUT/$dst.png" -o "$OUT/$dst.webp"
   report "$dst"
 done
+
+# Every Wear OS face style in every colour, for the face picker on the home
+# page. WebP only: the picker is script-driven, and every browser that runs it
+# reads WebP. Loaded one at a time, when someone picks that combination.
+FACES_OUT="$OUT/faces"
+mkdir -p "$FACES_OUT"
+count=0
+for src in "$WEAR_REPO"/store/faces/*.png; do
+  name="$(basename "$src" .png)"
+  tmp="$FACES_OUT/$name.png"
+  sips --resampleWidth 440 "$src" --out "$tmp" >/dev/null
+  cwebp -quiet -q 84 -exact "$tmp" -o "$FACES_OUT/$name.webp"
+  rm "$tmp"
+  count=$((count + 1))
+done
+echo "faces        <- $WEAR_REPO/store/faces ($count, $(( $(cat "$FACES_OUT"/*.webp | wc -c) / 1024 )) KB)"

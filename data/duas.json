@@ -1,0 +1,968 @@
+{
+ "lists": {
+  "morning": [
+   "durood-ibrahim",
+   "ayat-al-kursi",
+   "al-ikhlas",
+   "al-falaq",
+   "an-nas",
+   "sayyid-al-istighfar",
+   "asbahna-mulk",
+   "allahumma-bika-asbahna",
+   "bismillah-la-yadurru",
+   "raditu-billah",
+   "subhanallah-adada-khalqih",
+   "ya-muqallibal-qulub",
+   "durood-ashr"
+  ],
+  "evening": [
+   "durood-ibrahim",
+   "ayat-al-kursi",
+   "al-ikhlas",
+   "al-falaq",
+   "an-nas",
+   "sayyid-al-istighfar",
+   "amsayna-mulk",
+   "allahumma-bika-amsayna",
+   "bismillah-la-yadurru",
+   "raditu-billah",
+   "kalimat-tammat",
+   "ya-muqallibal-qulub",
+   "durood-ashr"
+  ],
+  "night": [
+   "ayat-al-kursi",
+   "khawatim-al-baqarah",
+   "al-ikhlas",
+   "al-falaq",
+   "an-nas",
+   "tasbih-subhanallah",
+   "tahmid-alhamdulillah",
+   "takbir-allahu-akbar",
+   "allahumma-qini-adhabak",
+   "bismika-amutu-wa-ahya",
+   "allahumma-aslamtu-nafsi"
+  ]
+ },
+ "duas": [
+  {
+   "id": "durood-ibrahim",
+   "title": "Durood on the Prophet ﷺ",
+   "arabic": "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ. اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+   "transliteration": "Allahumma salli ‘ala Muhammadin wa ‘ala ali Muhammad, kama sallayta ‘ala Ibrahima wa ‘ala ali Ibrahim, innaka Hamidun Majid. Allahumma barik ‘ala Muhammadin wa ‘ala ali Muhammad, kama barakta ‘ala Ibrahima wa ‘ala ali Ibrahim, innaka Hamidun Majid.",
+   "english": "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim. You are indeed Praiseworthy, Glorious. O Allah, bless Muhammad and the family of Muhammad, as You blessed Ibrahim and the family of Ibrahim. You are indeed Praiseworthy, Glorious.",
+   "repeat": 1,
+   "source": "Bukhārī 3370 · Muslim 406",
+   "remark": "The salawat he ﷺ taught when they asked how",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    },
+    {
+     "id": "alarm",
+     "label": "Said to stop the alarm"
+    }
+   ],
+   "keywords": [
+    "salawat",
+    "durood",
+    "salawaat",
+    "blessings on the prophet",
+    "friday",
+    "tashahhud"
+   ]
+  },
+  {
+   "id": "ayat-al-kursi",
+   "title": "Ayat al-Kursi",
+   "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ، لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ، لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ، مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ، يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ، وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ، وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ، وَلَا يَئُودُهُ حِفْظُهُمَا، وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+   "transliteration": "Allahu la ilaha illa Huwa l-Hayyu l-Qayyum. La ta’khudhuhu sinatun wa la nawm. Lahu ma fi s-samawati wa ma fi l-ard. Man dha lladhi yashfa‘u ‘indahu illa bi-idhnih. Ya‘lamu ma bayna aydihim wa ma khalfahum, wa la yuhituna bi shay’in min ‘ilmihi illa bima sha’. Wasi‘a kursiyyuhu s-samawati wa l-ard, wa la ya’uduhu hifzuhuma, wa Huwa l-‘Aliyyu l-‘Azim.",
+   "english": "Allah — there is no god but He, the Ever-Living, the Sustainer of all. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who can intercede with Him except by His permission? He knows what lies before them and what is behind them, and they encompass nothing of His knowledge except what He wills. His Kursī extends over the heavens and the earth, and their preservation does not weary Him. He is the Most High, the Most Great.",
+   "repeat": 1,
+   "source": "Al-Baqarah 2:255 · an-Nasāʾī, ʿAmal al-Yawm 962",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    },
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "protection",
+    "throne verse",
+    "2:255",
+    "baqarah",
+    "before sleep",
+    "after prayer"
+   ]
+  },
+  {
+   "id": "al-ikhlas",
+   "title": "Surat al-Ikhlas",
+   "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ\nاللَّهُ الصَّمَدُ\nلَمْ يَلِدْ وَلَمْ يُولَدْ\nوَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+   "transliteration": "Qul Huwa llahu Ahad\nAllahu s-Samad\nLam yalid wa lam yulad\nWa lam yakun lahu kufuwan ahad",
+   "english": "Say: He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born, and there is none comparable to Him.",
+   "repeat": 3,
+   "source": "Qur’an 112 · Abū Dāwūd 5082",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    },
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "three quls",
+    "qul",
+    "surah",
+    "112",
+    "protection",
+    "oneness"
+   ]
+  },
+  {
+   "id": "al-falaq",
+   "title": "Surat al-Falaq",
+   "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ\nمِنْ شَرِّ مَا خَلَقَ\nوَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ\nوَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ\nوَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+   "transliteration": "Qul a‘udhu bi Rabbi l-falaq\nMin sharri ma khalaq\nWa min sharri ghasiqin idha waqab\nWa min sharri n-naffathati fi l-‘uqad\nWa min sharri hasidin idha hasad",
+   "english": "Say: I seek refuge in the Lord of the daybreak — from the evil of what He created, from the evil of darkness when it settles, from the evil of those who blow on knots, and from the evil of an envier when he envies.",
+   "repeat": 3,
+   "source": "Qur’an 113 · Abū Dāwūd 5082",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    },
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "three quls",
+    "qul",
+    "surah",
+    "113",
+    "protection",
+    "evil eye",
+    "magic",
+    "envy"
+   ]
+  },
+  {
+   "id": "an-nas",
+   "title": "Surat an-Nas",
+   "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ\nمَلِكِ النَّاسِ\nإِلَٰهِ النَّاسِ\nمِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ\nالَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ\nمِنَ الْجِنَّةِ وَالنَّاسِ",
+   "transliteration": "Qul a‘udhu bi Rabbi n-nas\nMaliki n-nas\nIlahi n-nas\nMin sharri l-waswasi l-khannas\nAlladhi yuwaswisu fi suduri n-nas\nMina l-jinnati wa n-nas",
+   "english": "Say: I seek refuge in the Lord of mankind, the Sovereign of mankind, the God of mankind — from the evil of the retreating whisperer who whispers in the breasts of mankind, from among the jinn and mankind.",
+   "repeat": 3,
+   "source": "Qur’an 114 · Abū Dāwūd 5082",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    },
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "three quls",
+    "qul",
+    "surah",
+    "114",
+    "protection",
+    "evil eye",
+    "whispers"
+   ]
+  },
+  {
+   "id": "sayyid-al-istighfar",
+   "title": "Sayyid al-Istighfar",
+   "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+   "transliteration": "Allahumma anta Rabbi la ilaha illa anta, khalaqtani wa ana ‘abduk, wa ana ‘ala ‘ahdika wa wa‘dika ma stata‘t. A‘udhu bika min sharri ma sana‘t, abu’u laka bi ni‘matika ‘alayya, wa abu’u bi dhanbi faghfir li fa innahu la yaghfiru dh-dhunuba illa ant.",
+   "english": "O Allah, You are my Lord; there is no god but You. You created me and I am Your servant, and I hold to Your covenant and Your promise as best I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favour upon me and I acknowledge my sin, so forgive me — for none forgives sins but You.",
+   "repeat": 1,
+   "source": "Bukhārī 6306",
+   "remark": "The best way of asking forgiveness",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    }
+   ],
+   "keywords": [
+    "forgiveness",
+    "repentance",
+    "tawbah",
+    "sorry",
+    "sins"
+   ]
+  },
+  {
+   "id": "asbahna-mulk",
+   "title": "Asbahna wa asbaha l-mulku lillah",
+   "arabic": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ",
+   "transliteration": "Asbahna wa asbaha l-mulku lillah, wa l-hamdu lillah, la ilaha illa llahu wahdahu la sharika lah, lahu l-mulku wa lahu l-hamdu wa huwa ‘ala kulli shay’in qadir. Rabbi as’aluka khayra ma fi hadha l-yawmi wa khayra ma ba‘dah, wa a‘udhu bika min sharri ma fi hadha l-yawmi wa sharri ma ba‘dah.",
+   "english": "We have entered the morning and the dominion belongs to Allah. All praise is for Allah. There is no god but Allah alone, with no partner; His is the dominion and His is the praise, and He is over all things capable. My Lord, I ask You for the good of this day and the good that comes after it, and I seek refuge in You from the evil of this day and the evil that comes after it.",
+   "repeat": 1,
+   "source": "Muslim 2723",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "allahumma-bika-asbahna",
+   "title": "Allahumma bika asbahna",
+   "arabic": "اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ",
+   "transliteration": "Allahumma bika asbahna, wa bika amsayna, wa bika nahya, wa bika namut, wa ilayka n-nushur.",
+   "english": "O Allah, by You we enter the morning and by You we enter the evening; by You we live and by You we die, and to You is the resurrection.",
+   "repeat": 1,
+   "source": "Abū Dāwūd 5068 · at-Tirmidhī 3391",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "bismillah-la-yadurru",
+   "title": "Bismillahi lladhi la yadurru",
+   "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+   "transliteration": "Bismillahi lladhi la yadurru ma‘a smihi shay’un fi l-ardi wa la fi s-sama’, wa Huwa s-Sami‘u l-‘Alim.",
+   "english": "In the name of Allah, with whose name nothing in the earth or in the heaven can cause harm, and He is the All-Hearing, the All-Knowing.",
+   "repeat": 3,
+   "source": "Abū Dāwūd 5088 · at-Tirmidhī 3388",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    }
+   ],
+   "keywords": [
+    "protection",
+    "safety",
+    "harm",
+    "leaving the house",
+    "out and about"
+   ]
+  },
+  {
+   "id": "raditu-billah",
+   "title": "Raditu billahi Rabba",
+   "arabic": "رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا",
+   "transliteration": "Raditu billahi Rabba, wa bi l-Islami dina, wa bi Muhammadin salla llahu ‘alayhi wa sallama Nabiyya.",
+   "english": "I am pleased with Allah as my Lord, with Islam as my religion, and with Muhammad (peace and blessings be upon him) as my Prophet.",
+   "repeat": 3,
+   "source": "Abū Dāwūd 5072",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    }
+   ],
+   "keywords": [
+    "contentment",
+    "satisfied",
+    "pleased"
+   ]
+  },
+  {
+   "id": "subhanallah-adada-khalqih",
+   "title": "Subhanallahi wa bihamdih, adada khalqih",
+   "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
+   "transliteration": "Subhana llahi wa bi hamdih, ‘adada khalqih, wa rida nafsih, wa zinata ‘arshih, wa midada kalimatih.",
+   "english": "Glory be to Allah and praise be to Him — as many as the number of His creation, as much as pleases Him, as much as the weight of His Throne, and as much as the ink of His words.",
+   "repeat": 3,
+   "source": "Muslim 2726",
+   "remark": "Three times outweighs a whole morning of dhikr",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "ya-muqallibal-qulub",
+   "title": "Ya Muqalliba l-qulub",
+   "arabic": "يَا مُقَلِّبَ الْقُلُوبِ، ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ",
+   "transliteration": "Ya Muqalliba l-qulub, thabbit qalbi ‘ala dinik.",
+   "english": "O Turner of hearts, make my heart firm upon Your religion.",
+   "repeat": 1,
+   "source": "at-Tirmidhī 2140",
+   "remark": "He ﷺ said it often; the hearts are between two fingers of the Merciful",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "durood-ashr",
+   "title": "Durood, ten times",
+   "arabic": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَىٰ نَبِيِّنَا مُحَمَّدٍ",
+   "transliteration": "Allahumma salli wa sallim ‘ala Nabiyyina Muhammad.",
+   "english": "O Allah, send prayers and peace upon our Prophet Muhammad.",
+   "repeat": 10,
+   "source": "aṭ-Ṭabarānī, al-Awsaṭ",
+   "remark": "Graded ḥasan; ten in the morning and ten in the evening, and my intercession reaches him",
+   "places": [
+    {
+     "id": "morning",
+     "label": "Morning adhkar"
+    },
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "amsayna-mulk",
+   "title": "Amsayna wa amsa l-mulku lillah",
+   "arabic": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا",
+   "transliteration": "Amsayna wa amsa l-mulku lillah, wa l-hamdu lillah, la ilaha illa llahu wahdahu la sharika lah, lahu l-mulku wa lahu l-hamdu wa huwa ‘ala kulli shay’in qadir. Rabbi as’aluka khayra ma fi hadhihi l-laylati wa khayra ma ba‘daha, wa a‘udhu bika min sharri ma fi hadhihi l-laylati wa sharri ma ba‘daha.",
+   "english": "We have entered the evening and the dominion belongs to Allah. All praise is for Allah. There is no god but Allah alone, with no partner; His is the dominion and His is the praise, and He is over all things capable. My Lord, I ask You for the good of this night and the good that comes after it, and I seek refuge in You from the evil of this night and the evil that comes after it.",
+   "repeat": 1,
+   "source": "Muslim 2723",
+   "places": [
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "allahumma-bika-amsayna",
+   "title": "Allahumma bika amsayna",
+   "arabic": "اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ",
+   "transliteration": "Allahumma bika amsayna, wa bika asbahna, wa bika nahya, wa bika namut, wa ilayka l-masir.",
+   "english": "O Allah, by You we enter the evening and by You we enter the morning; by You we live and by You we die, and to You is the final return.",
+   "repeat": 1,
+   "source": "Abū Dāwūd 5068 · at-Tirmidhī 3391",
+   "places": [
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "kalimat-tammat",
+   "title": "A‘udhu bi kalimatillahi t-tammat",
+   "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+   "transliteration": "A‘udhu bi kalimati llahi t-tammati min sharri ma khalaq.",
+   "english": "I seek refuge in the perfect words of Allah from the evil of what He has created.",
+   "repeat": 3,
+   "source": "Muslim 2708b",
+   "remark": "Said in the evening, nothing will harm you that night",
+   "places": [
+    {
+     "id": "evening",
+     "label": "Evening adhkar"
+    }
+   ],
+   "keywords": [
+    "protection",
+    "harm",
+    "snake",
+    "sting",
+    "evening",
+    "stopping somewhere"
+   ]
+  },
+  {
+   "id": "khawatim-al-baqarah",
+   "title": "The last two of al-Baqarah",
+   "arabic": "آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ، كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ، لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ، وَقَالُوا سَمِعْنَا وَأَطَعْنَا، غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ\nلَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا، لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ، رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا، رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا، رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ، وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا، أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+   "transliteration": "Amana r-Rasulu bima unzila ilayhi min Rabbihi wa l-mu’minun. Kullun amana billahi wa mala’ikatihi wa kutubihi wa rusulih. La nufarriqu bayna ahadin min rusulih. Wa qalu sami‘na wa ata‘na, ghufranaka Rabbana wa ilayka l-masir.\nLa yukallifu llahu nafsan illa wus‘aha. Laha ma kasabat wa ‘alayha ma ktasabat. Rabbana la tu’akhidhna in nasina aw akhta’na. Rabbana wa la tahmil ‘alayna isran kama hamaltahu ‘ala lladhina min qablina. Rabbana wa la tuhammilna ma la taqata lana bih. Wa‘fu ‘anna, waghfir lana, warhamna. Anta Mawlana fansurna ‘ala l-qawmi l-kafirin.",
+   "english": "The Messenger believes in what was revealed to him from his Lord, and so do the believers. Each believes in Allah, His angels, His books and His messengers — we make no distinction between any of His messengers. And they say: we hear and we obey; grant us Your forgiveness, our Lord, and to You is the return.\nAllah burdens no soul beyond its capacity. It has what it has earned, and against it what it has brought upon itself. Our Lord, do not take us to task if we forget or fall into error. Our Lord, do not lay upon us a burden like the one You laid upon those before us. Our Lord, do not burden us with more than we can bear. Pardon us, forgive us, and have mercy on us. You are our Protector, so give us victory over the disbelieving people.",
+   "repeat": 1,
+   "source": "Al-Baqarah 2:285-286 · Bukhārī 5009",
+   "remark": "Whoever reads them at night, they suffice him",
+   "places": [
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    }
+   ],
+   "keywords": [
+    "before sleep",
+    "night",
+    "last two verses",
+    "285",
+    "286",
+    "protection"
+   ]
+  },
+  {
+   "id": "tasbih-subhanallah",
+   "title": "Subhanallah",
+   "arabic": "سُبْحَانَ اللَّهِ",
+   "transliteration": "Subhanallah.",
+   "english": "Glory be to Allah.",
+   "repeat": 33,
+   "source": "Bukhārī 3705",
+   "remark": "The tasbih of Fatima, at bedtime",
+   "places": [
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "tasbih",
+    "33",
+    "counting",
+    "after prayer",
+    "beads"
+   ]
+  },
+  {
+   "id": "tahmid-alhamdulillah",
+   "title": "Alhamdulillah",
+   "arabic": "الْحَمْدُ لِلَّهِ",
+   "transliteration": "Alhamdulillah.",
+   "english": "All praise is for Allah.",
+   "repeat": 33,
+   "source": "Bukhārī 3705",
+   "places": [
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "tasbih",
+    "33",
+    "counting",
+    "after prayer",
+    "thanks"
+   ]
+  },
+  {
+   "id": "takbir-allahu-akbar",
+   "title": "Allahu akbar",
+   "arabic": "اللَّهُ أَكْبَرُ",
+   "transliteration": "Allahu akbar.",
+   "english": "Allah is the Greatest.",
+   "repeat": 34,
+   "source": "Bukhārī 3705",
+   "remark": "Better for the two of you than a servant",
+   "places": [
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    },
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "tasbih",
+    "33",
+    "34",
+    "counting",
+    "after prayer"
+   ]
+  },
+  {
+   "id": "allahumma-qini-adhabak",
+   "title": "Allahumma qini adhabak",
+   "arabic": "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ",
+   "transliteration": "Allahumma qini ‘adhabaka yawma tab‘athu ‘ibadak.",
+   "english": "O Allah, protect me from Your punishment on the Day You raise Your servants.",
+   "repeat": 3,
+   "source": "Abū Dāwūd 5045",
+   "remark": "Said with your hand under your cheek",
+   "places": [
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    }
+   ],
+   "keywords": [
+    "before sleep",
+    "bed",
+    "lying down",
+    "night"
+   ]
+  },
+  {
+   "id": "bismika-amutu-wa-ahya",
+   "title": "Bismika Allahumma amutu wa ahya",
+   "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+   "transliteration": "Bismika llahumma amutu wa ahya.",
+   "english": "In Your name, O Allah, I die and I live.",
+   "repeat": 1,
+   "source": "Bukhārī 6324",
+   "remark": "Said as you lie down",
+   "places": [
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    }
+   ],
+   "keywords": [
+    "before sleep",
+    "bed",
+    "lying down",
+    "night",
+    "waking"
+   ]
+  },
+  {
+   "id": "allahumma-aslamtu-nafsi",
+   "title": "Allahumma aslamtu nafsi ilayk",
+   "arabic": "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ",
+   "transliteration": "Allahumma aslamtu nafsi ilayk, wa fawwadtu amri ilayk, wa alja’tu zahri ilayk, raghbatan wa rahbatan ilayk. La malja’a wa la manja minka illa ilayk. Amantu bi kitabika lladhi anzalt, wa bi nabiyyika lladhi arsalt.",
+   "english": "O Allah, I submit myself to You, entrust my affair to You, and turn my back to You in hope of You and in fear of You. There is no refuge and no escape from You except to You. I believe in Your Book which You revealed and in Your Prophet whom You sent.",
+   "repeat": 1,
+   "source": "Bukhārī 247 · Muslim 2710",
+   "remark": "Let it be the last thing you say, and you die upon the fitrah",
+   "places": [
+    {
+     "id": "night",
+     "label": "Before-sleep adhkar"
+    }
+   ],
+   "keywords": [
+    "before sleep",
+    "bed",
+    "lying down",
+    "night"
+   ]
+  },
+  {
+   "id": "astaghfirullah",
+   "title": "Astaghfirullah",
+   "arabic": "أَسْتَغْفِرُ اللَّهَ",
+   "transliteration": "Astaghfirullah.",
+   "english": "I seek the forgiveness of Allah.",
+   "repeat": 3,
+   "source": "Muslim 591",
+   "remark": "Said three times on finishing the prayer",
+   "places": [
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "forgiveness",
+    "repentance",
+    "tawbah",
+    "sorry",
+    "sins"
+   ]
+  },
+  {
+   "id": "allahumma-antas-salam",
+   "title": "Allahumma anta s-Salam",
+   "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ، وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+   "transliteration": "Allahumma anta s-Salamu wa minka s-salam, tabarakta ya Dha l-Jalali wa l-Ikram.",
+   "english": "O Allah, You are Peace and from You comes peace. Blessed are You, Owner of Majesty and Honour.",
+   "repeat": 1,
+   "source": "Muslim 591",
+   "places": [
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "la-ilaha-illallah-wahdah",
+   "title": "La ilaha illallahu wahdah",
+   "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+   "transliteration": "La ilaha illa llahu wahdahu la sharika lah, lahu l-mulku wa lahu l-hamdu wa huwa ‘ala kulli shay’in qadir. Allahumma la mani‘a lima a‘tayt, wa la mu‘tiya lima mana‘t, wa la yanfa‘u dha l-jaddi minka l-jadd.",
+   "english": "There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He is over all things capable. O Allah, none can withhold what You give, and none can give what You withhold, and no fortune can avail its owner against You.",
+   "repeat": 1,
+   "source": "Bukhārī 844 · Muslim 593",
+   "places": [
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "la-ilaha-illallah-nimah",
+   "title": "Lahu n-ni‘matu wa lahu l-fadl",
+   "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ، وَلَا نَعْبُدُ إِلَّا إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لَا إِلَٰهَ إِلَّا اللَّهُ مُخْلِصِينَ لَهُ الدِّينَ وَلَوْ كَرِهَ الْكَافِرُونَ",
+   "transliteration": "La ilaha illa llahu wahdahu la sharika lah, lahu l-mulku wa lahu l-hamdu wa huwa ‘ala kulli shay’in qadir. La hawla wa la quwwata illa billah. La ilaha illa llah, wa la na‘budu illa iyyah. Lahu n-ni‘matu wa lahu l-fadlu wa lahu th-thana’u l-hasan. La ilaha illa llahu mukhlisina lahu d-dina wa law kariha l-kafirun.",
+   "english": "There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He is over all things capable. There is no might and no power except with Allah. There is no god but Allah, and we worship none but Him. His is the favour, His is the bounty, and His is the excellent praise. There is no god but Allah — we are sincere to Him in religion, however much the disbelievers dislike it.",
+   "repeat": 1,
+   "source": "Muslim 594",
+   "places": [
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "allahumma-ainni-ala-dhikrik",
+   "title": "Allahumma a‘inni ala dhikrik",
+   "arabic": "اللَّهُمَّ أَعِنِّي عَلَىٰ ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+   "transliteration": "Allahumma a‘inni ‘ala dhikrika wa shukrika wa husni ‘ibadatik.",
+   "english": "O Allah, help me to remember You, to thank You, and to worship You well.",
+   "repeat": 1,
+   "source": "Abū Dāwūd 1522",
+   "remark": "The Prophet ﷺ told Muʿādh never to leave this after any prayer",
+   "places": [
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "help",
+    "remembrance",
+    "thanks",
+    "worship"
+   ]
+  },
+  {
+   "id": "audhu-minal-bukhl",
+   "title": "A‘udhu bika mina l-bukhl",
+   "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبُخْلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ مِنْ أَنْ أُرَدَّ إِلَىٰ أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ",
+   "transliteration": "Allahumma inni a‘udhu bika mina l-bukhl, wa a‘udhu bika mina l-jubn, wa a‘udhu bika min an uradda ila ardhali l-‘umur, wa a‘udhu bika min fitnati d-dunya, wa a‘udhu bika min ‘adhabi l-qabr.",
+   "english": "O Allah, I seek refuge in You from miserliness, and I seek refuge in You from cowardice, and I seek refuge in You from being returned to the feeblest age, and I seek refuge in You from the trials of this world, and I seek refuge in You from the punishment of the grave.",
+   "repeat": 1,
+   "source": "Bukhārī 2822",
+   "places": [
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": [
+    "stinginess",
+    "cowardice",
+    "old age",
+    "grave",
+    "protection"
+   ]
+  },
+  {
+   "id": "tahlil-tamam-miah",
+   "title": "Completing the hundred",
+   "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+   "transliteration": "La ilaha illa llahu wahdahu la sharika lah, lahu l-mulku wa lahu l-hamdu wa huwa ‘ala kulli shay’in qadir.",
+   "english": "There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He is over all things capable.",
+   "repeat": 1,
+   "source": "Muslim 597",
+   "remark": "The hundredth, and his sins are forgiven",
+   "places": [
+    {
+     "id": "afterPrayer",
+     "label": "After prayer"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "tahlil-ashr",
+   "title": "The ten, after Fajr and Maghrib",
+   "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، يُحْيِي وَيُمِيتُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+   "transliteration": "La ilaha illa llahu wahdahu la sharika lah, lahu l-mulku wa lahu l-hamd, yuhyi wa yumit, wa huwa ‘ala kulli shay’in qadir.",
+   "english": "There is no god but Allah alone, with no partner. His is the dominion and His is the praise. He gives life and causes death, and He is over all things capable.",
+   "repeat": 10,
+   "source": "Aḥmad 17990",
+   "places": [
+    {
+     "id": "afterFajrMaghrib",
+     "label": "After Fajr and Maghrib"
+    }
+   ],
+   "keywords": []
+  },
+  {
+   "id": "ajirni-minan-nar",
+   "title": "Allahumma ajirni mina n-nar",
+   "arabic": "اللَّهُمَّ أَجِرْنِي مِنَ النَّارِ",
+   "transliteration": "Allahumma ajirni mina n-nar.",
+   "english": "O Allah, protect me from the Fire.",
+   "repeat": 7,
+   "source": "Abū Dāwūd 5079",
+   "remark": "After Fajr and Maghrib, before speaking",
+   "places": [
+    {
+     "id": "afterFajrMaghrib",
+     "label": "After Fajr and Maghrib"
+    }
+   ],
+   "keywords": [
+    "fire",
+    "hell",
+    "protection",
+    "after fajr",
+    "after maghrib"
+   ]
+  },
+  {
+   "id": "ilman-nafian",
+   "title": "Ilman nafi‘an",
+   "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
+   "transliteration": "Allahumma inni as’aluka ‘ilman nafi‘a, wa rizqan tayyiba, wa ‘amalan mutaqabbala.",
+   "english": "O Allah, I ask You for beneficial knowledge, wholesome provision, and deeds that are accepted.",
+   "repeat": 1,
+   "source": "Ibn Mājah 925",
+   "remark": "Said after Fajr",
+   "places": [
+    {
+     "id": "afterFajr",
+     "label": "After Fajr"
+    }
+   ],
+   "keywords": [
+    "knowledge",
+    "study",
+    "exam",
+    "learning",
+    "useful"
+   ]
+  },
+  {
+   "id": "bismillahi-tawakkaltu",
+   "title": "Leaving the house",
+   "arabic": "بِسْمِ اللهِ، تَوَكَّلْتُ عَلَى اللهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ",
+   "transliteration": "Bismillah, tawakkaltu ‘alallah, wa la hawla wa la quwwata illa billah.",
+   "english": "In the name of Allah. I place my trust in Allah, and there is no might nor power except with Allah.",
+   "repeat": 1,
+   "source": "Abū Dāwūd 5095, at-Tirmidhī 3426",
+   "remark": "Said as you step out of the door",
+   "places": [
+    {
+     "id": "journey",
+     "label": "Setting off"
+    }
+   ],
+   "keywords": [
+    "travel",
+    "leaving the house",
+    "going out",
+    "trust",
+    "door"
+   ]
+  },
+  {
+   "id": "subhanalladhi-sakhkhara",
+   "title": "Setting off",
+   "arabic": "اللهُ أَكْبَرُ، اللهُ أَكْبَرُ، اللهُ أَكْبَرُ\nسُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ\nاللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى، وَمِنَ الْعَمَلِ مَا تَرْضَى\nاللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا، وَاطْوِ عَنَّا بُعْدَهُ\nاللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الْأَهْلِ\nاللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ الْمَنْظَرِ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ",
+   "transliteration": "Allahu akbar, Allahu akbar, Allahu akbar.\nSubhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina lamunqalibun.\nAllahumma inna nas’aluka fi safarina hadha al-birra wat-taqwa, wa minal-‘amali ma tarda.\nAllahumma hawwin ‘alayna safarana hadha, watwi ‘anna bu‘dah.\nAllahumma antas-sahibu fis-safar, wal-khalifatu fil-ahl.\nAllahumma inni a‘udhu bika min wa‘tha’is-safar, wa ka’abatil-manzar, wa su’il-munqalabi fil-mali wal-ahl.",
+   "english": "Allah is the greatest, Allah is the greatest, Allah is the greatest. Glory be to Him who has placed this at our service, for we could never have managed it ourselves — and to our Lord we are surely returning. O Allah, we ask You on this journey of ours for righteousness and piety, and for deeds that please You. O Allah, make this journey easy for us and fold up its distance. O Allah, You are the Companion on the journey and the Guardian of the family left behind. O Allah, I seek refuge in You from the hardship of the journey, from a grim sight, and from an ill return in wealth and family.",
+   "repeat": 1,
+   "source": "Muslim 1342",
+   "remark": "Said once seated, as you set off",
+   "places": [
+    {
+     "id": "journey",
+     "label": "Setting off"
+    }
+   ],
+   "keywords": [
+    "travel",
+    "car",
+    "driving",
+    "journey",
+    "setting off",
+    "trip",
+    "vehicle",
+    "flight"
+   ]
+  },
+  {
+   "id": "after-adhan",
+   "title": "After the adhan",
+   "arabic": "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلَاةِ الْقَائِمَةِ، آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
+   "transliteration": "Allahumma rabba hadhihid-da‘watit-tammah, was-salatil-qa’imah, ati Muhammadanil-wasilata wal-fadilah, wab‘athhu maqaman mahmudanil-ladhi wa‘adtah.",
+   "english": "O Allah, Lord of this perfect call and the prayer about to be established, grant Muhammad the Wasilah and the virtue, and raise him to the praised station You promised him.",
+   "repeat": 1,
+   "source": "Bukhārī 614",
+   "places": [
+    {
+     "id": "adhan",
+     "label": "After the adhan"
+    }
+   ],
+   "keywords": [
+    "adhan",
+    "azan",
+    "athan",
+    "call to prayer",
+    "muezzin",
+    "wasilah",
+    "intercession"
+   ]
+  },
+  {
+   "id": "taawwudh",
+   "title": "Seeking refuge",
+   "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+   "transliteration": "Aʿudhu billahi minash-shaytanir-rajim",
+   "english": "I seek refuge with Allah from Satan, the accursed",
+   "repeat": 1,
+   "source": "Qur’an 16:98",
+   "places": [
+    {
+     "id": "alarm",
+     "label": "Said to stop the alarm"
+    }
+   ],
+   "keywords": [
+    "shaytan",
+    "satan",
+    "devil",
+    "refuge",
+    "whispers",
+    "waswas"
+   ]
+  },
+  {
+   "id": "wake-up",
+   "title": "Waking up",
+   "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+   "transliteration": "Alhamdu lillahil-ladhi ahyana baʿda ma amatana wa ilayhin-nushur",
+   "english": "Praise is to Allah who gave us life after He caused us to die, and to Him is the resurrection",
+   "repeat": 1,
+   "source": "Bukhārī 6312",
+   "places": [
+    {
+     "id": "alarm",
+     "label": "Said to stop the alarm"
+    }
+   ],
+   "keywords": [
+    "wake",
+    "woke",
+    "waking up",
+    "getting up",
+    "out of bed",
+    "alarm",
+    "after sleep"
+   ]
+  },
+  {
+   "id": "returned-soul",
+   "title": "The returned soul",
+   "arabic": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي وَرَدَّ عَلَيَّ رُوحِي وَأَذِنَ لِي بِذِكْرِهِ",
+   "transliteration": "Alhamdu lillahil-ladhi ʿafani fi jasadi wa radda ʿalayya ruhi wa adhina li bi dhikrih",
+   "english": "Praise is to Allah who restored well-being to my body, returned my soul to me, and granted me permission to remember Him",
+   "repeat": 1,
+   "source": "at-Tirmidhī 3401",
+   "remark": "Graded ḥasan",
+   "places": [
+    {
+     "id": "alarm",
+     "label": "Said to stop the alarm"
+    }
+   ],
+   "keywords": [
+    "wake",
+    "woke",
+    "waking up",
+    "getting up",
+    "out of bed",
+    "alarm",
+    "after sleep",
+    "soul",
+    "body"
+   ]
+  }
+ ]
+}

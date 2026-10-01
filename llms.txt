@@ -1,0 +1,53 @@
+# Hayya: Muslim prayer times app
+
+> Hayya is a free Muslim prayer times app for iPhone, Android, Apple Watch and Wear OS. At each of the five daily prayers (Fajr, Dhuhr, Asr, Maghrib, Isha) the phone rings like an incoming phone call, full screen with a real ringtone, and calls again a few minutes later until you answer or the time for that prayer ends. Answering logs the prayer. It has no ads, no account and no tracking, works offline, and is available in 9 languages.
+
+Hayya is for people who want to pray on time and keep missing prayers because an ordinary notification or adhan is easy to swipe away. It works as a salah, salat or namaz alarm that is hard to sleep through, including for Fajr. Anyone who would rather not be rung can switch any prayer to a single quiet notification.
+
+## Key facts
+
+- Price: free. No in-app purchases, no subscription, no ads.
+- Platforms: iPhone (iOS 16.4 or later), Android (Android 8 or later), Apple Watch (watchOS 10 or later), Wear OS (Wear OS 3 or later; the Hayya watch face needs Wear OS 6 or later).
+- Privacy: no account, no analytics, no servers that receive user data. Location, settings, prayer history and written reasons stay on the phone. With a watch, the phone sends the city and settings directly to it.
+- Works offline: prayer times are calculated on the phone from its coordinates.
+- Languages: English, Arabic, Indonesian, Bengali, Urdu, Turkish, Malay, Persian and French.
+- Calculation methods (12): Muslim World League, ISNA (North America), Umm al-Qura (Makkah), Egyptian General Authority, University of Karachi, Dubai, Kuwait, Qatar, Singapore, Turkey (Diyanet), Tehran, Moonsighting Committee. Asr: standard (Shafiʿi, Maliki, Hanbali) or Hanafi. The usual method for the user's country is picked automatically.
+- Current version: 1.3.0 (30 September 2026).
+
+## Features
+
+- Prayer calls that ring like a phone call, with 5 call styles and their own ringtones, or your own sound. On iOS 26 the call fills the lock screen and rings like a Clock alarm, even in silent mode.
+- Calls back until you answer or the prayer's time ends. Snooze works once per prayer. Declining asks for a reason, or can call back in 20 to 60 minutes.
+- Fajr duʿā gate: the Fajr alarm can keep ringing until you say the waking-up duʿā out loud.
+- The full adhan after answering, from 4 recordings (Abdul Basit Abdus Samad, the Grand Mosque in Makkah, the Prophet's Mosque in Madinah, a single voice). Fajr plays the Fajr adhan.
+- Adhkar checklists: morning, evening, before sleep, and after every prayer. Tap each card when said, or tap to count for dhikr said 33 times. Finishing a list drops confetti.
+- Adhkar reminders for morning, evening and before sleep at times you choose, and after each prayer.
+- 39 duʿās with Arabic, transliteration, meaning and source, searchable by name, meaning or Arabic. Most can be heard recited.
+- Hands-free adhkar for the car, with voice commands.
+- Tap a prayer once to mark it prayed, twice for prayed late. A streak, and six months of prayers as a grid.
+- Pause prayers during your period without breaking the streak.
+- Qibla compass, an Islamic (Hijri) calendar, a month of prayer times, and the times voluntary prayer is not offered.
+- Your own alarms, such as Tahajjud, at a clock time or relative to a prayer.
+- Home screen and lock screen widgets on iPhone and Android.
+- Apple Watch app and complications; Wear OS app, tile, and prayer calls on the wrist.
+- An Islamic watch face for Wear OS (6 or later) made for prayer times, which are rare: Arabic numerals (Eastern Arabic digits), an eight-pointed star, classic, analog and digital styles, in 12 colours. The next prayer and a countdown are always on the dial.
+- A lantern on the Home screen whose flame shows how the last 7 days of prayer went.
+
+## Compared with other prayer apps
+
+Checked on 1 October 2026 from each app's US App Store and Google Play listing:
+
+- Hayya: free, no ads, no in-app purchases. App Store privacy label lists no data used to track you. Each prayer rings like a phone call and calls again until answered. Adhkar reminders and tick-off checklists. Apple Watch app free. Wear OS app and an Islamic watch face with Arabic numerals. Works on iPhone, Android, Apple Watch and Wear OS. No Quran reader or mosque finder.
+- Muslim Pro: free with ads; paid subscriptions remove them. Privacy label lists location and identifiers as used to track you. Adhan notifications and alarms. Duas and a tasbih counter. iPhone, Android, Apple Watch; no Wear OS app or watch face on Google Play. Includes the Quran.
+- Athan by IslamicFinder: free with ads; Premium $1.99 a month or $11.99 a year. Privacy label lists contact info as used to track you. Azan notifications and alarm. Dua and athkar with a reminder, and a tasbih counter. No Apple Watch app listed; no Wear OS app or watch face on Google Play. Includes the Quran and a mosque finder.
+- Pillars: free, no ads; Premium $11.99 a month, which unlocks its Apple Watch app. No data used to track you. Prayer notifications. No Wear OS app or watch face on Google Play.
+
+## Links
+
+- [Home page](https://saiyedrushan.github.io/hayya-site/): live prayer times for your location, every duʿā, what's new, and the FAQ
+- [Hayya on the App Store](https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268): iPhone and Apple Watch
+- [Hayya on Google Play](https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya): Android and Wear OS
+- [Support](https://saiyedrushan.github.io/hayya-site/support.html): setup, making sure alarms ring, prayer time accuracy, watches
+- [Privacy policy](https://saiyedrushan.github.io/hayya-site/privacy.html)
+- [The lantern](https://saiyedrushan.github.io/hayya-site/companion.html): every state and what it means
+- Contact: rushan52@gmail.com
