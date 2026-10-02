@@ -1,5 +1,5 @@
 {
-  "_comment": "Source of truth for the in-app 'update available' sheet. Publish a byte-identical copy to https://saiyedrushan.github.io/hayya-site/version.json once a build is live on the store. Full instructions: CICD.md, 'Announcing a store update'.",
+  "_comment": "Source of truth for the in-app 'update available' sheet. Publish a byte-identical copy to https://hayyaprayer.com/version.json once a build is live on the store. Full instructions: CICD.md, 'Announcing a store update'.",
   "version": "1.2.0",
   "notes": [
     "A small friend on the home screen — a brother in a kufi or a sister in hijab — whose strength is your last seven days and whose face is the last few hours",
