@@ -364,9 +364,11 @@ button.prow:active { transform: scale(.98); }
 
 /* ---------- Story: the call, step by step ---------- */
 .story-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); }
-.story-phone { position: sticky; top: 0; align-self: start; height: 100vh; display: flex; align-items: center; justify-content: center; }
+/* Starts under the 64px nav, and the phone takes the height that's left minus a margin,
+   so on a short window it shrinks instead of sliding under the nav. */
+.story-phone { position: sticky; top: 64px; align-self: start; height: calc(100vh - 64px); display: flex; align-items: center; justify-content: center; }
 .story-frame {
-  position: relative; width: min(320px, 100%); aspect-ratio: 600 / 1298; border-radius: 44px; overflow: hidden;
+  position: relative; height: min(692px, calc(100vh - 64px - 64px)); max-width: 100%; aspect-ratio: 600 / 1298; border-radius: 44px; overflow: hidden;
   background: #111; border: 10px solid #0b0d0c;
   box-shadow: 0 0 0 1.5px rgba(227, 201, 131, .25), 0 50px 90px -20px rgba(0, 0, 0, .6), 0 0 120px rgba(201, 162, 75, .12);
 }
