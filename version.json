@@ -1,13 +1,25 @@
 {
   "_comment": "Source of truth for the in-app 'update available' sheet. Publish a byte-identical copy to https://hayyaprayer.com/version.json once a build is live on the store. Full instructions: CICD.md, 'Announcing a store update'.",
-  "version": "1.2.0",
-  "notes": [
-    "A small friend on the home screen — a brother in a kufi or a sister in hijab — whose strength is your last seven days and whose face is the last few hours",
-    "Tap the card for the full picture: a day-by-day bar, today’s tally, a shield for a perfect yesterday, a glow for a whole week kept",
-    "A Companion widget for the home screen, on both platforms, that keeps up with the day while the app is closed",
-    "Nothing about the companion is stored — the prayer log is the only source, so marking a prayer late heals retroactively and unmarking takes it back",
-    "The lock screen’s Now and next widget now gives Sunrise its own row while Show sunrise is on",
-    "Ticking a card on the adhkar, after-salah, Friday and My duas lists gives a small tap under your finger — Settings → Adhkar → Vibrate on tick turns it off"
-  ],
-  "required": false
+  "version": "1.3.0",
+  "required": false,
+  "ios": {
+    "notes": [
+      "Your companion is now a lantern. Its flame shows how your last seven days of prayer went.",
+      "On iOS 26, a prayer call fills the lock screen and rings like a Clock alarm, even in silent mode.",
+      "Choose your ringtone: the iPhone alarm sound or any audio file, and every call rings with it.",
+      "Hayya on Apple Watch: see the next prayer on your watch and add it to your watch face.",
+      "The five built-in ringtones are louder.",
+      "Try a call from the themes screen as soon as you pick its theme."
+    ]
+  },
+  "android": {
+    "notes": [
+      "Your companion is now a lantern. Its flame shows how your last seven days of prayer went.",
+      "Hayya on Wear OS watches: the next prayer on your watch, a Hayya watch face, and calls that buzz your wrist.",
+      "Choose your ringtone from any of your phone's ringtones or alarm sounds, and every call rings with it.",
+      "Calls ring at your alarm volume, and you can make them louder in Alarms.",
+      "The five built-in ringtones are louder.",
+      "Try a call from the themes screen as soon as you pick its theme."
+    ]
+  }
 }
