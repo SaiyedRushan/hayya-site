@@ -193,7 +193,7 @@ GitHub Pages serves `main` from the repo root. Pushing to `main` publishes.
 
 ## Before publishing changes
 
-- Contact email is `rushan52@gmail.com` in `privacy.html`, `support.html`, `terms.html`, and
+- Contact email is `support@hayyaprayer.com` in `privacy.html`, `support.html`, `terms.html`, and
   every footer.
 - Effective dates on the legal pages are 21 July 2026.
 - iOS requirement quoted on the site (iOS 16.4 or later) comes from the App Store listing.
