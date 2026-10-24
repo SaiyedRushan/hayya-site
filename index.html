@@ -156,7 +156,7 @@
         "name": "How does Hayya compare with Muslim Pro, Athan and Pillars?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Hayya is free with no ads and no in-app purchases, and its App Store privacy label lists no data used to track you. Muslim Pro and Athan are free with ads and sell paid plans; Pillars has no ads and sells a Premium plan, which is what unlocks its Apple Watch app. The biggest difference is the alert: the others notify you with the adhan, while Hayya rings like a phone call and calls again until you answer. Hayya has no Quran reader or mosque finder, which Muslim Pro and Athan do. See the full comparison."
+          "text": "Hayya is free with no ads and no in-app purchases, and its App Store privacy label lists no data used to track you. Muslim Pro and Athan are free with ads and sell paid plans; Pillars has no ads and sells a Premium plan, which is what unlocks its Apple Watch app. The biggest difference is the alert: the others notify you with the adhan, while Hayya rings like a phone call and calls again until you answer. Hayya now includes a Quran reader, prayer-time app blocking, and reminders to stop doomscrolling. It has no mosque finder. See the full comparison."
         }
       },
       {
@@ -288,8 +288,8 @@
   <link rel="preload" href="assets/fonts/amiri-400-latin.woff2" as="font" type="font/woff2" crossorigin />
   <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="home.css" />
-  <script type="module" src="home.js"></script>
+  <link rel="stylesheet" href="home.css?v=20261023-shields" />
+  <script type="module" src="home.js?v=20261023-shields"></script>
 </head>
 <body class="home">
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -724,6 +724,35 @@
               <span>Show the dimmed always-on screen</span>
             </label>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest app captures: October 2026 -->
+    <section class="sec sec-cream" id="quran-and-focus">
+      <div class="wrap-wide">
+        <div class="sec-head reveal">
+          <p class="kicker">Qur’an and focus</p>
+          <h2>Make space for what matters</h2>
+          <p class="sub">Read and listen to the Qur’an. Keep chosen apps closed until you’ve prayed, and set reminders to pause the endless scroll.</p>
+        </div>
+        <div class="rail-wrap reveal">
+          <button type="button" class="rail-btn prev" data-rail="-1" aria-label="Show the previous Qur’an and focus picture"><svg aria-hidden="true"><use href="#i-left"/></svg></button>
+          <div class="rail" id="focus-rail" tabindex="0" aria-label="Qur’an and focus pictures">
+            <figure>
+              <picture><source srcset="collages/10-quran.webp" type="image/webp" /><img src="collages/10-quran.jpg" alt="Hayya Qur’an library and reader, with Arabic text and translation" width="1600" height="1148" loading="lazy" /></picture>
+              <figcaption>Read, listen, and return to where you left off.</figcaption>
+            </figure>
+            <figure>
+              <picture><source srcset="collages/11-focus.webp" type="image/webp" /><img src="collages/11-focus.jpg" alt="Hayya prayer-time app blocking and Stop doomscrolling settings" width="1600" height="1148" loading="lazy" /></picture>
+              <figcaption>Choose the apps to block during salah and when to pause scrolling.</figcaption>
+            </figure>
+            <figure>
+              <picture><source srcset="collages/13-blocked-apps.webp?v=countdown" type="image/webp" /><img src="collages/13-blocked-apps.jpg?v=countdown" alt="The Android prayer block screen and a scrolling reminder showing Wait 59 seconds with Keep using Chrome disabled" width="1600" height="1185" loading="lazy" /></picture>
+              <figcaption>An app blocked for salah, and a one-minute countdown before you can keep scrolling.</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="rail-btn next" data-rail="1" aria-label="Show the next Qur’an and focus picture"><svg aria-hidden="true"><use href="#i-right"/></svg></button>
         </div>
       </div>
     </section>
@@ -1627,7 +1656,7 @@ Allahumma inni a‘udhu bika min wa‘tha’is-safar, wa ka’abatil-manzar, wa 
           </table>
         </div>
         <div class="cmp-notes reveal">
-          <p><strong>When another app may suit you better.</strong> Hayya does one job: getting you to pray on time. It has no Quran reader and no mosque finder. If you want those in the same app as your prayer times, Muslim Pro and Athan both include the Quran, and Athan has a mosque finder.</p>
+          <p><strong>When another app may suit you better.</strong> Hayya brings prayer calls, a Quran reader, daily remembrance, and app limits together. It has no mosque finder. If finding a nearby mosque is what you need, compare the options below.</p>
           <p>Apple doesn't let apps make their own watch faces, so on Apple Watch every prayer app, Hayya included, puts the next prayer on Apple's faces instead.</p>
           <p class="cmp-src">Checked on 1 October 2026 from each app's US listing on the App Store (<a href="https://apps.apple.com/us/app/muslim-pro-quran-athan/id388389451" target="_blank" rel="noopener">Muslim Pro</a>, <a href="https://apps.apple.com/us/app/athan-prayer-times-dua-azkar/id505858403" target="_blank" rel="noopener">Athan</a>, <a href="https://apps.apple.com/us/app/pillars-prayer-times-qibla/id1559086853" target="_blank" rel="noopener">Pillars</a>) and Google Play. Prices are in US dollars and change by country. The names belong to their owners, and Hayya isn't connected with any of these apps.</p>
         </div>
@@ -1672,7 +1701,7 @@ Allahumma inni a‘udhu bika min wa‘tha’is-safar, wa ka’abatil-manzar, wa 
           </details>
           <details>
             <summary>How does Hayya compare with Muslim Pro, Athan and Pillars?</summary>
-            <p>Hayya is free with no ads and no in-app purchases, and its App Store privacy label lists no data used to track you. Muslim Pro and Athan are free with ads and sell paid plans; Pillars has no ads and sells a Premium plan, which is what unlocks its Apple Watch app. The biggest difference is the alert: the others notify you with the adhan, while Hayya rings like a phone call and calls again until you answer. Hayya has no Quran reader or mosque finder, which Muslim Pro and Athan do. <a href="#compare">See the full comparison.</a></p>
+            <p>Hayya is free with no ads and no in-app purchases, and its App Store privacy label lists no data used to track you. Muslim Pro and Athan are free with ads and sell paid plans; Pillars has no ads and sells a Premium plan, which is what unlocks its Apple Watch app. The biggest difference is the alert: the others notify you with the adhan, while Hayya rings like a phone call and calls again until you answer. Hayya now includes a Quran reader, prayer-time app blocking, and reminders to stop doomscrolling. It has no mosque finder. <a href="#compare">See the full comparison.</a></p>
           </details>
           <details>
             <summary>Which prayer time calculation methods does it use?</summary>
