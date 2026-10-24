@@ -40,6 +40,8 @@ Hayya is for people who want to pray on time and keep missing prayers because an
 
 ## Compared with other prayer apps
 
+The website comparison now includes Quran reading and recitation, optional app blocking during salah, and Stop doomscrolling usage limits with a waiting period. Hayya includes all three. Its wait is one minute by default, with an Android live countdown and an iPhone wait instruction. Muslim Pro and Athan describe Quran reading, translations and recitation in their App Store listings; Pillars does not list a Quran reader. None of those three reviewed listings describes prayer-time app blocking or per-app usage reminders with a wait before continuing. These rows were checked on 23 October 2026. “Not listed” reports the content of the listings, not a test of the apps. Sources: https://apps.apple.com/us/app/muslim-pro-quran-athan/id388389451 ; https://apps.apple.com/us/app/athan-prayer-times-dua-azkar/id505858403 ; https://apps.apple.com/us/app/pillars-prayer-times-qibla/id1559086853 .
+
 Competitor information below was checked on 1 October 2026 from each app's US App Store and Google Play listing. Hayya’s feature summary was updated on 23 October 2026:
 
 - Hayya: free, no ads, no in-app purchases. App Store privacy label lists no data used to track you. Each prayer rings like a phone call and calls again until answered. Adhkar reminders and tick-off checklists. Apple Watch app free. Wear OS app and an Islamic watch face with Arabic numerals. Works on iPhone, Android, Apple Watch and Wear OS. Includes a Quran reader, prayer-time app blocking and Stop doomscrolling reminders. No mosque finder.
