@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hayya: Muslim Prayer Times App That Rings Like a Call</title>
-  <meta name="description" content="Free prayer times app for iPhone, Android, Apple Watch and Wear OS. Every salah rings like a phone call. Adhan, adhkar checklist, duas, qibla. No ads." />
+  <meta name="description" content="Free prayer calls, Quran reading and recitation, app blocking during salah, doomscroll reminders with a waiting period, and daily adhkar. iPhone and Android." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="apple-itunes-app" content="app-id=6795738268" />
   <link rel="canonical" href="https://hayyaprayer.com/" />
@@ -20,14 +20,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Hayya" />
   <meta property="og:title" content="Hayya: Muslim Prayer Times App That Rings Like a Call" />
-  <meta property="og:description" content="Free prayer times app for iPhone, Android, Apple Watch and Wear OS. Every salah rings like a phone call until you answer. Adhan, adhkar, duas and qibla. No ads, no account." />
+  <meta property="og:description" content="Free prayer calls, Quran reading and recitation, app blocking during salah, doomscroll reminders with a waiting period, and daily adhkar. iPhone and Android." />
   <meta property="og:url" content="https://hayyaprayer.com/" />
   <meta property="og:image" content="https://hayyaprayer.com/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Hayya: Muslim Prayer Times App That Rings Like a Call" />
-  <meta name="twitter:description" content="Free prayer times app for iPhone, Android, Apple Watch and Wear OS. Every salah rings like a phone call until you answer." />
+  <meta name="twitter:description" content="Free prayer calls, Quran reading and recitation, app blocking during salah, doomscroll reminders with a waiting period, and daily adhkar. iPhone and Android." />
   <link rel="alternate" type="text/plain" href="llms.txt" title="Hayya, described for AI assistants" />
 
   <script type="application/ld+json">
@@ -43,7 +43,7 @@
           "Hayya prayer times",
           "Hayya salah alarm"
         ],
-        "description": "Free Muslim prayer times app for iPhone, Android, Apple Watch and Wear OS. At every prayer time the phone rings like an incoming call until you answer, and answering logs the prayer. Includes the adhan, morning, evening and before-sleep adhkar with a checklist, 39 duas with Arabic, transliteration and meaning, a qibla compass, an Islamic calendar, widgets, and 12 calculation methods. No ads, no account, no tracking; works offline.",
+        "description": "Hayya is a free Muslim prayer times app for iPhone and Android, with Apple Watch and Wear OS apps. Prayer times ring like incoming calls. Includes a Quran reader with all 114 surahs, translations and audio recitation; optional app blocking during salah; Stop doomscrolling usage reminders with a waiting period; daily adhkar checklists and duas; qibla, widgets and prayer history. No ads, account or tracking.",
         "url": "https://hayyaprayer.com/",
         "applicationCategory": "LifestyleApplication",
         "applicationSubCategory": "Prayer times",
@@ -71,7 +71,11 @@
           "https://hayyaprayer.com/screenshots/01-home.png",
           "https://hayyaprayer.com/screenshots/02-call.png",
           "https://hayyaprayer.com/screenshots/08-adhkar.png",
-          "https://hayyaprayer.com/screenshots/09-qibla.png"
+          "https://hayyaprayer.com/screenshots/09-qibla.png",
+          "https://hayyaprayer.com/screenshots/11-quran.png",
+          "https://hayyaprayer.com/screenshots/12-quran-reader.png",
+          "https://hayyaprayer.com/screenshots/11-prayer-blocked.png",
+          "https://hayyaprayer.com/screenshots/12-scroll-blocked.png"
         ],
         "inLanguage": [
           "en",
@@ -89,6 +93,10 @@
           "Each prayer rings like an incoming phone call, and calls again until you answer or the prayer's time ends",
           "Full-screen alarm on iOS 26 that rings even in silent mode",
           "Play the full adhan after answering, from 4 recordings",
+          "Quran reader with all 114 surahs, Arabic text, translations, audio recitation, bookmarks and recent reading places",
+          "Optional app blocking during salah: selected apps stay closed from a prayer call until you mark the prayer done, or until its time ends",
+          "Stop doomscrolling: choose usage limits for apps and a waiting period before continuing, with a one-minute default wait",
+          "Android scrolling reminder with a live countdown and Keep using disabled until the wait ends; iPhone reminders explain the required wait",
           "Morning, evening, before-sleep and after-prayer adhkar checklists you tick card by card, with counters for dhikr said 33 times",
           "Adhkar reminders for morning, evening, before sleep and after each prayer",
           "39 duas with Arabic, transliteration, meaning and source, searchable",
@@ -277,6 +285,30 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "If a prayer's time ends without an answer, it's logged as missed and your streak starts again. If you did pray and forgot to log it, tap the prayer: once for prayed, twice for prayed late."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Hayya include a Quran reader?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Hayya includes all 114 surahs with Arabic text, translations and audio recitation. You can bookmark ayahs and return to your recent reading places."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Hayya block apps during salah?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. With the required permissions, Hayya keeps the apps you choose closed from a prayer call until you open Hayya and tap I have prayed. If you do not mark the prayer done, the apps open again when that prayer’s time ends. This is optional and is available on iPhone and Android."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Stop doomscrolling work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Choose a usage limit and a waiting period for each app. When you reach the usage limit, Hayya shows a reminder with a du’a to seek refuge with Allah. You can close the app, or wait before continuing. The default wait is one minute and can be changed. Android shows a live countdown with Keep using disabled during the wait; on iPhone, the reminder tells you how long to wait before tapping Keep using. App use adds up across visits, and the reminder repeats after the next interval of use."
         }
       }
     ]
@@ -1689,6 +1721,18 @@ Allahumma inni a‘udhu bika min wa‘tha’is-safar, wa ka’abatil-manzar, wa 
           <p class="sub">The short answers. There are more on the <a href="support.html">support page</a>.</p>
         </div>
         <div class="faq reveal">
+          <details>
+            <summary>Does Hayya include a Quran reader?</summary>
+            <p>Yes. Hayya includes all 114 surahs with Arabic text, translations and audio recitation. You can bookmark ayahs and return to your recent reading places.</p>
+          </details>
+          <details>
+            <summary>Can Hayya block apps during salah?</summary>
+            <p>Yes. With the required permissions, Hayya keeps the apps you choose closed from a prayer call until you open Hayya and tap I have prayed. If you do not mark the prayer done, the apps open again when that prayer’s time ends. This is optional and is available on iPhone and Android.</p>
+          </details>
+          <details>
+            <summary>How does Stop doomscrolling work?</summary>
+            <p>Choose a usage limit and a waiting period for each app. When you reach the usage limit, Hayya shows a reminder with a du’a to seek refuge with Allah. You can close the app, or wait before continuing. The default wait is one minute and can be changed. Android shows a live countdown with Keep using disabled during the wait; on iPhone, the reminder tells you how long to wait before tapping Keep using. App use adds up across visits, and the reminder repeats after the next interval of use.</p>
+          </details>
           <details>
             <summary>What is Hayya?</summary>
             <p>Hayya is a free Muslim prayer times app for iPhone, Android, Apple Watch and Wear OS. It works out the five daily prayer times (Fajr, Dhuhr, Asr, Maghrib and Isha) for where you are, and at each one your phone rings like an incoming call until you answer. People use it as a salah, salat or namaz alarm that's hard to sleep through.</p>
