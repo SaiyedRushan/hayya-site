@@ -985,21 +985,23 @@ function startChecklist(duas, ids) {
 
 /* ---------- The picture rail ---------- */
 
-const rail = $('#rail');
-if (rail) {
-  const prev = $('.rail-btn.prev');
-  const nextBtn = $('.rail-btn.next');
+$$('.rail-wrap').forEach((wrap) => {
+  const rail = wrap.querySelector('.rail');
+  const prev = wrap.querySelector('.rail-btn.prev');
+  const nextBtn = wrap.querySelector('.rail-btn.next');
+  if (!rail || !prev || !nextBtn) return;
   const sync = () => {
     prev.disabled = rail.scrollLeft < 10;
     nextBtn.disabled = rail.scrollLeft + rail.clientWidth > rail.scrollWidth - 10;
   };
-  $$('.rail-btn').forEach((b) => b.addEventListener('click', () => {
+  wrap.querySelectorAll('.rail-btn').forEach((b) => b.addEventListener('click', () => {
     const fig = rail.querySelector('figure');
     rail.scrollBy({ left: (+b.dataset.rail) * (fig.getBoundingClientRect().width + 22) });
   }));
   rail.addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
+  window.addEventListener('resize', sync);
   sync();
-}
+});
 
 startLiveTimes();
 startDuas();
