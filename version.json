@@ -1,26 +1,13 @@
 {
   "_comment": "Source of truth for the in-app 'update available' sheet. Publish a byte-identical copy to https://hayyaprayer.com/version.json once a build is live on the store. Full instructions: CICD.md, 'Announcing a store update'.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "required": false,
-  "ios": {
-    "version": "1.4.0",
-    "notes": [
-      "Block apps at prayer time: the apps you choose stay closed from the call until you tap I have prayed.",
-      "Stop doomscrolling: choose a daily time for an app. When you reach it, Hayya reminds you to put your phone down.",
-      "The adhan as your ringtone: in Alarms, set Ringtone to Adhan and your calls ring with the adhan you chose.",
-      "A ringtone for each alarm: open one of your alarms and tap Ringtone to give it its own sound.",
-      "Alarms as a quiet reminder: an alarm can arrive as one notification at its time, and nothing rings back.",
-      "A snooze length for each alarm, from 5 to 30 minutes."
-    ]
-  },
-  "android": {
-    "notes": [
-      "Your companion is now a lantern. Its flame shows how your last seven days of prayer went.",
-      "Hayya on Wear OS watches: the next prayer on your watch, a Hayya watch face, and calls that buzz your wrist.",
-      "Choose your ringtone from any of your phone's ringtones or alarm sounds, and every call rings with it.",
-      "Calls ring at your alarm volume, and you can make them louder in Alarms.",
-      "The five built-in ringtones are louder.",
-      "Try a call from the themes screen as soon as you pick its theme."
-    ]
-  }
+  "notes": [
+    "Block apps at prayer time: the apps you choose stay closed from the call until you tap I have prayed.",
+    "Stop doomscrolling: choose a daily time for an app. When you reach it, Hayya reminds you to put your phone down.",
+    "The adhan as your ringtone: in Alarms, set Ringtone to Adhan and your calls ring with the adhan you chose.",
+    "A ringtone for each alarm: open one of your alarms and tap Ringtone to give it its own sound.",
+    "Alarms as a quiet reminder: an alarm can arrive as one notification at its time, and nothing rings back.",
+    "A snooze length for each alarm, from 5 to 30 minutes."
+  ]
 }
