@@ -64,7 +64,9 @@
         ],
         "sameAs": [
           "https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268",
-          "https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya"
+          "https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya",
+          "https://www.instagram.com/hayya.salah/",
+          "https://www.tiktok.com/@hayya.salah"
         ],
         "image": "https://hayyaprayer.com/assets/icon-512.png",
         "screenshot": [
@@ -320,7 +322,7 @@
   <link rel="preload" href="assets/fonts/amiri-400-latin.woff2" as="font" type="font/woff2" crossorigin />
   <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="home.css?v=20261023-shields" />
+  <link rel="stylesheet" href="home.css?v=20261102-reviews" />
   <script type="module" src="home.js?v=20261023-shields"></script>
 </head>
 <body class="home">
@@ -337,6 +339,7 @@
     <symbol id="i-left" viewBox="0 0 24 24"><path d="m14.5 5.5-6.5 6.5 6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-right" viewBox="0 0 24 24"><path d="m9.5 5.5 6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="m5.5 12.5 4.2 4.2 8.8-9.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.85 5.9 6.45.9-4.7 4.5 1.15 6.4L12 17.25 6.25 20.3l1.15-6.4-4.7-4.5 6.45-.9z" fill="currentColor"/></symbol>
     <symbol id="i-call" viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></symbol>
   </svg>
 
@@ -350,6 +353,10 @@
         <a class="nav-only-wide" href="#duas">Duʿās</a>
         <a class="nav-only-wide" href="#compare">Compare</a>
         <a class="nav-only-wide" href="#faq">Questions</a>
+        <span class="nav-social">
+          <a class="social" href="https://www.instagram.com/hayya.salah/" aria-label="Hayya on Instagram" title="Hayya on Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+          <a class="social" href="https://www.tiktok.com/@hayya.salah" aria-label="Hayya on TikTok" title="Hayya on TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+        </span>
         <a class="nav-cta" href="#download">Get the app</a>
       </div>
     </div>
@@ -387,6 +394,12 @@
             </a>
           </div>
         </div>
+
+        <a class="rating" href="#reviews">
+          <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <span class="rating-text"><strong>5.0 out of 5</strong> on the App Store</span>
+          <span class="rating-go">Read the reviews</span>
+        </a>
 
         <ul class="facts">
           <li>Free, no in-app purchases</li>
@@ -585,6 +598,62 @@
             </li>
           </ol>
         </div>
+      </div>
+    </section>
+
+    <!-- Reviews, copied from the stores in the reviewers' own words. No Review or
+         AggregateRating JSON-LD: Google treats reviews a site shows about itself as
+         self-serving and won't use them, and the App Store count changes anyway. -->
+    <section class="sec sec-paper" id="reviews">
+      <div class="wrap-wide">
+        <div class="sec-head reveal">
+          <p class="kicker">Reviews</p>
+          <h2>What people who use Hayya say</h2>
+          <p class="sub">Hayya is rated 5.0 out of 5 on the App Store. Here are some of the reviews, in the words of the people who wrote them.</p>
+        </div>
+        <div class="reviews reveal">
+        <figure class="review">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <h3>Alhamdulillah for this app</h3>
+          <blockquote>
+            <p>As a non-Arabic speaking person - this app is so well thought out to help everyone learn at all levels. The adhkar it reminds you to do, comes in arabic, phonetically sounded and in english translation aswell as it being narrated for you. What was difficult for me to learn is all in one place now and you can keep track of everything you’ve done throughout the day. Alhamdulillah 🤲🏻</p>
+          </blockquote>
+          <figcaption><span class="review-name">Emiramiftari</span> <time datetime="2026-10-27">27 October 2026</time></figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <h3>Very useful app for daily adhkar</h3>
+          <blockquote>
+            <p>I use Hayya every day and I really like it. The daily adhkar are very helpful, and the lock screen widgets remind me without opening the app. My favourite part is that I can play the adhkar and hear how the duas are recited, so I can learn to say them correctly. The app is very easy to use. I have sent some feature requests and bug reports, and the developer fixed them quickly. Highly recommended.</p>
+          </blockquote>
+          <figcaption><span class="review-name">Sajidshah saiyed</span></figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <h3>Download it nowww!!</h3>
+          <blockquote>
+            <p>A comprehensive and encompassing application. From prayers (inclusive of the voluntary but virtuous) to adkhars of various times in the day (all backed by legitimate references) to a companion persona, Hayya has integrated several important aspects of a Muslim’s daily life into one unified platform. Hayya is a user friendly app that does not require sign ups or other bothersome features; it is interactive and intuitive to use. My favorite part of the app is how well it tracks and quantifies your progress in prayers and adhkar. This helps better reflection and subsequent improvement as a Muslim. May Allah bless the developer team of this app and bring it prosperity.</p>
+          </blockquote>
+          <figcaption><span class="review-name">Saif@noi</span> <time datetime="2026-09-23">23 September 2026</time></figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <h3>An encompassing and very beneficial app for a Muslim</h3>
+          <blockquote>
+            <p>Subhanallah this app is really good! It is more than a prayer reminder app. It also has the daily Adhkar specific to the Salahs from the sunnah of the prophet pbuh with source links listed and appear specifically when the Salah time comes. It is designed in an intuitive manner, it displays the Salah times as widgets, easily allowing you to choose which Salah time system you follow, has a very helpful “call” feature to remind you pray that is accompanied with a beautiful reminder. And all of it designed in an intuitive and great manner It’s one app that replaces multiple other apps, improving the overall experience. Highly recommend to download Inshallah Ta’ala</p>
+          </blockquote>
+          <figcaption><span class="review-name">Rayen!1567</span> <time datetime="2026-09-19">19 September 2026</time></figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <h3>Itqan</h3>
+          <blockquote>
+            <p>The app does many things that other apps do but it combines them into one app and allows for a very smooth experience with no interruptions and ads! Offline access, qibla, widgets and so much more. Can’t talk enough about it. Jazak Allah khair!</p>
+          </blockquote>
+          <figcaption><span class="review-name">Ahm@dS</span> <time datetime="2026-08-30">30 August 2026</time></figcaption>
+        </figure>
+        </div>
+        <p class="reviews-more reveal">Read every review on the <a href="https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268?see-all=reviews" target="_blank" rel="noopener">App Store</a> or on <a href="https://play.google.com/store/apps/details?id=com.saiyedrushan.hayya" target="_blank" rel="noopener">Google Play</a>.</p>
       </div>
     </section>
 
@@ -1928,6 +1997,8 @@ Allahumma inni a‘udhu bika min wa‘tha’is-safar, wa ka’abatil-manzar, wa 
         <a href="support.html">Support</a>
         <a href="mailto:support@hayyaprayer.com">Contact</a>
         <a href="index.html#more-apps">More apps</a>
+        <a href="https://www.instagram.com/hayya.salah/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@hayya.salah" target="_blank" rel="noopener">TikTok</a>
       </div>
       <div class="store-badges">
         <a href="https://apps.apple.com/ca/app/hayya-prayer-alarm/id6795738268" aria-label="Download Hayya on the App Store" target="_blank" rel="noopener">

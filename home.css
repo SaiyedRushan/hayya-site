@@ -12,6 +12,7 @@
 .home .site-nav.on-dark .brand { color: var(--cream); }
 .home .site-nav.on-dark .nav-links a:not(.nav-cta) { color: rgba(246, 241, 230, .78); }
 .home .site-nav.on-dark .nav-links a:not(.nav-cta):hover { color: #fff; }
+.home .site-nav.on-dark .nav-social a.social:hover { background: rgba(246, 241, 230, .1); }
 .home .site-nav:not(.on-dark) { box-shadow: 0 8px 30px rgba(12, 43, 33, .06); }
 
 /* ---------- Scroll reveal ---------- */
@@ -113,6 +114,7 @@
 .js .hero-copy > .pill-new { animation-delay: 0s; }
 .js .hero-copy > .lede { animation-delay: .3s; }
 .js .hero-copy > .get { animation-delay: .42s; }
+.js .hero-copy > .rating { animation-delay: .48s; }
 .js .hero-copy > .facts { animation-delay: .54s; }
 @keyframes fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 
@@ -131,6 +133,21 @@
 .watch-badge span { display: flex; flex-direction: column; gap: 3px; font-size: 17px; font-weight: 600; letter-spacing: -.01em; white-space: nowrap; }
 .watch-badge small { font-size: 10.5px; font-weight: 500; letter-spacing: .02em; }
 .store-badge:hover, .watch-badge:hover { transform: translateY(-3px); text-decoration: none; box-shadow: 0 12px 28px rgba(0, 0, 0, .35); }
+
+/* The App Store rating under the badges. Jumps to the reviews. */
+.rating {
+  display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; margin: 24px 0 0;
+  font-size: 15px; color: rgba(233, 225, 207, .88);
+}
+.rating:hover { text-decoration: none; }
+.rating .stars { color: var(--gold-bright); }
+.rating strong { color: var(--cream); font-weight: 700; }
+.rating-go { color: var(--gold-bright); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(227, 201, 131, .4); text-underline-offset: 3px; }
+.rating:hover .rating-go { text-decoration-color: currentColor; }
+.rating:focus-visible { outline: 2px solid var(--gold-bright); outline-offset: 4px; border-radius: 6px; }
+
+.stars { display: inline-flex; gap: 2px; line-height: 0; }
+.stars svg { width: 18px; height: 18px; display: block; }
 
 .facts {
   margin: 26px 0 0; padding: 0; list-style: none; font-size: 14.5px; color: rgba(233, 225, 207, .8);
@@ -719,12 +736,31 @@ a.app-card:hover { text-decoration: none; transform: translateY(-4px); border-co
 .decks-card .decks a::after { content: "→"; color: var(--green); opacity: .55; transition: transform .2s, opacity .2s; }
 .decks-card .decks a:hover::after { transform: translateX(3px); opacity: 1; }
 
+/* ---------- Reviews ---------- */
+/* Columns, not a grid: the reviews run from three lines to twelve, and columns let
+   each one take the height it needs without leaving gaps under the short ones. */
+.reviews { columns: 3 300px; column-gap: 20px; }
+.review {
+  break-inside: avoid; display: inline-block; width: 100%; margin: 0 0 20px;
+  background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 26px 26px 22px;
+}
+.review .stars { color: var(--gold); }
+.review .stars svg { width: 16px; height: 16px; }
+.review h3 { font-family: var(--serif); font-weight: 700; color: var(--green); font-size: 22px; line-height: 1.25; margin: 14px 0 10px; }
+.review blockquote { margin: 0; }
+.review blockquote p { margin: 0; color: var(--ink); font-size: 15.5px; line-height: 1.65; overflow-wrap: anywhere; }
+.review figcaption { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px; justify-content: space-between; }
+.review-name { font-weight: 700; color: var(--ink); }
+.reviews-more { text-align: center; margin: 16px 0 0; color: var(--muted); }
+.reviews-more a { color: var(--green); font-weight: 700; }
+
 /* ---------- Narrower screens ---------- */
 @media (max-width: 1020px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 48px; }
   .hero-copy { display: flex; flex-direction: column; align-items: center; }
   .lede { margin: 0 auto; }
   .get, .facts { justify-content: center; }
+  .rating { justify-content: center; }
   .video-card { transform: none; }
   .live { grid-template-columns: 1fr; }
   .face-lab { grid-template-columns: 1fr; text-align: center; }

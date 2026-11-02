@@ -82,6 +82,15 @@ img { max-width: 100%; }
   transition: background .2s, transform .2s var(--ease);
 }
 .nav-links .nav-cta:hover { background: var(--gold-bright); color: var(--green); transform: translateY(-1px); }
+/* Instagram and TikTok, as icons. They stay on narrow screens, where the text links hide. */
+.nav-links .nav-social { display: flex; align-items: center; gap: 2px; margin-right: -6px; }
+.nav-links .nav-social a.social {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 999px; transition: color .2s, background .2s;
+}
+.nav-links .nav-social a.social:hover { background: rgba(12, 43, 33, .06); }
+.nav-links .nav-social a.social:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.nav-links .nav-social svg { width: 20px; height: 20px; display: block; }
 
 /* Buttons */
 .btn {
@@ -154,6 +163,8 @@ img { max-width: 100%; }
 @media (max-width: 520px) {
   .wrap, .wrap-wide { padding: 0 16px; }
   .brand span { font-size: 21px; }
+  .nav-links { gap: 12px; }
+  .nav-links .nav-social a.social { width: 36px; height: 36px; }
   .store-badges img { height: 46px; }
   .site-foot .wrap-wide { justify-content: center; text-align: center; }
 }
