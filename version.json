@@ -9,5 +9,12 @@
     "A ringtone for each alarm: open one of your alarms and tap Ringtone to give it its own sound.",
     "Alarms as a quiet reminder: an alarm can arrive as one notification at its time, and nothing rings back.",
     "A snooze length for each alarm, from 5 to 30 minutes."
-  ]
+  ],
+  "android": {
+    "version": "1.4.1",
+    "notes": [
+      "Adhkar on the doomscroll reminder: when your adhkar are due, the reminder shows them one at a time. Tap each one when you have said it.",
+      "Review words on the reminder: when your adhkar are done, the same card can take you through the words you have to review."
+    ]
+  }
 }
