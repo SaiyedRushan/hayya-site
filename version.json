@@ -13,13 +13,10 @@
     ]
   },
   "android": {
+    "version": "1.4.1",
     "notes": [
-      "Hayya now turns when you turn a tablet or an open foldable phone, and fits the wider screen.",
-      "Move any prayer time up to an hour either way to match your masjid. Your alarms follow it.",
-      "A new look for Home: the next prayer has a bigger card, and you tap a prayer to change its settings.",
-      "Duas for how you feel: pick anxious, sad, afraid, in debt and more to get duas, ayahs and short talks for it.",
-      "Read the Qur’an in the IndoPak script, as it is printed in India, Pakistan and Bangladesh.",
-      "Updates install inside Hayya: tap Update now and Google Play installs the new version without leaving the app."
+      "Adhkar on the doomscroll reminder: when your adhkar are due, the reminder shows them one at a time. Tap each one when you have said it.",
+      "Review words on the reminder: when your adhkar are done, the same card can take you through the words you have to review."
     ]
   }
 }
