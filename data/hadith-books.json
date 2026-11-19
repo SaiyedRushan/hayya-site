@@ -1,0 +1,611 @@
+{
+ "from": "hayya src/lib/hadithBooksData.ts",
+ "books": [
+  {
+   "id": "nawawi40",
+   "title": "40 Hadith an-Nawawi",
+   "arabic": "الأربعون النووية",
+   "by": "Gathered by Imam an-Nawawi",
+   "leather": "#7a4a1f",
+   "hadiths": 42,
+   "chapters": 1,
+   "first": {
+    "label": "",
+    "en": "Forty Hadith of an-Nawawi",
+    "ar": "الأربعون النووية",
+    "size": 42,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/nawawi40:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/nawawi40:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/nawawi40:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/nawawi40:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/nawawi40:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/nawawi40:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/nawawi40:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "qudsi40",
+   "title": "40 Hadith Qudsi",
+   "arabic": "الأحاديث القدسية",
+   "by": "Sayings of the Prophet ﷺ that he reported from Allah",
+   "leather": "#2c2a62",
+   "hadiths": 40,
+   "chapters": 1,
+   "first": {
+    "label": "",
+    "en": "Forty Hadith Qudsi",
+    "ar": "الحديث القدسي",
+    "size": 40,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/qudsi40:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/qudsi40:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/qudsi40:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/qudsi40:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/qudsi40:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/qudsi40:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/qudsi40:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "shahwaliullah40",
+   "title": "40 Hadith of Shah Waliullah",
+   "arabic": "الأربعون لولي الله الدهلوي",
+   "by": "Gathered by Shah Waliullah ad-Dihlawi",
+   "leather": "#5c2a3a",
+   "hadiths": 40,
+   "chapters": 1,
+   "first": {
+    "label": "",
+    "en": "Forty Hadith of Shah Waliullah Dehlawi",
+    "ar": "أربعون شاه ولي الله الدهلوي",
+    "size": 40,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/shahwaliullah40:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/shahwaliullah40:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/shahwaliullah40:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/shahwaliullah40:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/shahwaliullah40:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/shahwaliullah40:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/shahwaliullah40:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bukhari",
+   "title": "Sahih al-Bukhari",
+   "arabic": "صحيح البخاري",
+   "by": "Gathered by Imam al-Bukhari",
+   "leather": "#6e1d25",
+   "hadiths": 7273,
+   "chapters": 97,
+   "first": {
+    "label": "Chapter 1",
+    "en": "Revelation",
+    "ar": "كتاب بدء الوحى",
+    "size": 7,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/bukhari:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/bukhari:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/bukhari:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/bukhari:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/bukhari:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/bukhari:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/bukhari:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "muslim",
+   "title": "Sahih Muslim",
+   "arabic": "صحيح مسلم",
+   "by": "Gathered by Imam Muslim",
+   "leather": "#1b3158",
+   "hadiths": 7435,
+   "chapters": 57,
+   "first": {
+    "label": "Introduction",
+    "en": "Introduction",
+    "ar": "المقدمة",
+    "size": 91,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/muslim:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/muslim:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/muslim:3"
+     },
+     {
+      "n": "4a",
+      "url": "https://sunnah.com/muslim:4a"
+     },
+     {
+      "n": "4b",
+      "url": "https://sunnah.com/muslim:4b"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/muslim:5"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/muslim/introduction/7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "abudawud",
+   "title": "Sunan Abi Dawud",
+   "arabic": "سنن أبي داود",
+   "by": "Gathered by Imam Abu Dawud",
+   "leather": "#1d4b37",
+   "hadiths": 5276,
+   "chapters": 43,
+   "first": {
+    "label": "Chapter 1",
+    "en": "Purification (Kitab Al-Taharah)",
+    "ar": "كتاب الطهارة",
+    "size": 390,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/abudawud:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/abudawud:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/abudawud:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/abudawud:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/abudawud:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/abudawud:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/abudawud:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tirmidhi",
+   "title": "Jamiʿ at-Tirmidhi",
+   "arabic": "جامع الترمذي",
+   "by": "Gathered by Imam at-Tirmidhi",
+   "leather": "#58361c",
+   "hadiths": 3995,
+   "chapters": 49,
+   "first": {
+    "label": "Chapter 1",
+    "en": "The Book on Purification",
+    "ar": "كتاب الطهارة عن رسول الله صلى الله عليه وسلم",
+    "size": 148,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/tirmidhi:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/tirmidhi:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/tirmidhi:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/tirmidhi:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/tirmidhi:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/tirmidhi:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/tirmidhi:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nasai",
+   "title": "Sunan an-Nasaʾi",
+   "arabic": "سنن النسائي",
+   "by": "Gathered by Imam an-Nasaʾi",
+   "leather": "#4b2347",
+   "hadiths": 5763,
+   "chapters": 52,
+   "first": {
+    "label": "Chapter 1",
+    "en": "The Book of Purification",
+    "ar": "كتاب الطهارة",
+    "size": 325,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/nasai:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/nasai:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/nasai:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/nasai:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/nasai:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/nasai:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/nasai:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ibnmajah",
+   "title": "Sunan Ibn Majah",
+   "arabic": "سنن ابن ماجه",
+   "by": "Gathered by Imam Ibn Majah",
+   "leather": "#1f4a55",
+   "hadiths": 4337,
+   "chapters": 38,
+   "first": {
+    "label": "Introduction",
+    "en": "The Book of the Sunnah",
+    "ar": "كتاب المقدمة",
+    "size": 266,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/ibnmajah:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/ibnmajah:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/ibnmajah:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/ibnmajah:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/ibnmajah:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/ibnmajah:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/ibnmajah:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "riyadussalihin",
+   "title": "Riyad as-Salihin",
+   "arabic": "رياض الصالحين",
+   "by": "Gathered by Imam an-Nawawi",
+   "leather": "#3f4d1d",
+   "hadiths": 1896,
+   "chapters": 20,
+   "first": {
+    "label": "Introduction",
+    "en": "The Book of Miscellany",
+    "ar": "كتاب المقدمات",
+    "size": 679,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/riyadussalihin:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/riyadussalihin:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/riyadussalihin:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/riyadussalihin:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/riyadussalihin:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/riyadussalihin:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/riyadussalihin:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "adab",
+   "title": "Al-Adab al-Mufrad",
+   "arabic": "الأدب المفرد",
+   "by": "Gathered by Imam al-Bukhari",
+   "leather": "#2f4f4a",
+   "hadiths": 1326,
+   "chapters": 57,
+   "first": {
+    "label": "Chapter 1",
+    "en": "Parents",
+    "ar": "كتاب الْوَالِدَيْنِ",
+    "size": 46,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/adab:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/adab:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/adab:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/adab:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/adab:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/adab:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/adab:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "shamail",
+   "title": "Ash-Shamaʾil al-Muhammadiyah",
+   "arabic": "الشمائل المحمدية",
+   "by": "Gathered by Imam at-Tirmidhi",
+   "leather": "#6a4a14",
+   "hadiths": 402,
+   "chapters": 57,
+   "first": {
+    "label": "Chapter 1",
+    "en": "The Noble Features Of Rasoolullah",
+    "ar": "باب ما جاء في خلق رسول الله صلى الله عليه وسلم",
+    "size": 14,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/shamail:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/shamail:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/shamail:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/shamail:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/shamail:5"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/shamail:7"
+     },
+     {
+      "n": "8",
+      "url": "https://sunnah.com/shamail:8"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bulugh",
+   "title": "Bulugh al-Maram",
+   "arabic": "بلوغ المرام",
+   "by": "Gathered by Ibn Hajar al-ʿAsqalani",
+   "leather": "#343b5c",
+   "hadiths": 1736,
+   "chapters": 16,
+   "first": {
+    "label": "Chapter 1",
+    "en": "The Book of Purification",
+    "ar": "كتاب الطهارة",
+    "size": 150,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/bulugh:1"
+     },
+     {
+      "n": "2",
+      "url": "https://sunnah.com/bulugh:2"
+     },
+     {
+      "n": "3",
+      "url": "https://sunnah.com/bulugh:3"
+     },
+     {
+      "n": "4",
+      "url": "https://sunnah.com/bulugh:4"
+     },
+     {
+      "n": "5",
+      "url": "https://sunnah.com/bulugh:5"
+     },
+     {
+      "n": "6",
+      "url": "https://sunnah.com/bulugh:6"
+     },
+     {
+      "n": "7",
+      "url": "https://sunnah.com/bulugh:7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mishkat",
+   "title": "Mishkat al-Masabih",
+   "arabic": "مشكاة المصابيح",
+   "by": "Gathered by al-Khatib at-Tabrizi",
+   "leather": "#4a1f2c",
+   "hadiths": 5318,
+   "chapters": 29,
+   "first": {
+    "label": "Introduction",
+    "en": "Introduction",
+    "ar": "مقدمة المؤلف",
+    "size": 1,
+    "shown": [
+     {
+      "n": "1",
+      "url": "https://sunnah.com/mishkat:1"
+     }
+    ]
+   }
+  }
+ ]
+}

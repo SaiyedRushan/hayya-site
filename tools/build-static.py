@@ -10,7 +10,14 @@ itself rather than only built by home.js in the browser:
 - the FAQ's structured data (schema.org FAQPage), between <!-- faq-ld:start/end -->,
   copied from the visible FAQ so the two can't disagree.
 
-Run after tools/sync-duas.sh, and after editing the FAQ:
+- the Hadith section's shelf of books and the first book's card, from
+  data/hadith-books.json (tools/export-hadith-books.mjs), between
+  <!-- hadith-shelf:start/end --> and <!-- hadith-card:start/end -->. home.js
+  redraws the card when a book is picked, so keep hadith_card() here and card()
+  in startHadith() alike.
+
+Run after tools/sync-duas.sh, after tools/export-hadith-books.mjs, and after
+editing the FAQ:
 
   tools/build-static.py
 """
@@ -64,5 +71,65 @@ for q, body in re.findall(r"<summary>(.*?)</summary>(.*?)</details>", faq_html, 
 ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": items}, ensure_ascii=False, indent=2)
 s = between(s, "faq-ld", "\n  <script type=\"application/ld+json\">\n  " + ld.replace("\n", "\n  ") + "\n  </script>", 2)
 
+
+# Hadith: the shelf, and the card for the first book, as home.js draws them.
+GOALS = (1, 3, 5, 10)
+
+def duration(days):
+    if days <= 60:
+        return f"{days} day" if days == 1 else f"{days} days"
+    if days <= 730:
+        return f"about {round(days / 30)} months"
+    return f"about {round(days / 365)} years"
+
+def hadith_card(b, goal=1):
+    first = b["first"]
+    head = f'{esc(first["label"])}: {esc(first["en"])}' if first["label"] else f'The first {len(first["shown"])} hadiths'
+    ar = f' <span lang="ar" dir="rtl">{esc(first["ar"])}</span>' if first["label"] else ""
+    size = f'{b["hadiths"]:,} hadiths in {b["chapters"]} chapters' if b["chapters"] > 1 else f'{b["hadiths"]:,} hadiths'
+    chips = "".join(
+        f'<button type="button" data-goal="{g}" aria-pressed="{str(g == goal).lower()}">{g}</button>' for g in GOALS
+    )
+    rows = "".join(
+        f'''
+                <li class="hb-row"><button type="button" class="hb-tick" role="checkbox" aria-checked="false" data-n="{esc(h["n"])}" aria-label="Mark hadith {esc(h["n"])} as read"></button><a href="{esc(h["url"])}" target="_blank" rel="noopener">Hadith {esc(h["n"])}<small>sunnah.com<svg aria-hidden="true"><use href="#i-out"/></svg></small></a></li>'''
+        for h in first["shown"]
+    )
+    more = first["size"] - len(first["shown"])
+    where = "chapter" if first["label"] else "book"
+    more_line = f'\n              <p class="hb-more">{more:,} more in this {where}.</p>' if more > 0 else ""
+    return f'''
+            <div class="hb-top">
+              <div>
+                <h3 class="hb-title">{esc(b["title"])}</h3>
+                <p class="hb-by">{esc(b["by"])}</p>
+              </div>
+              <p class="hb-title-ar" lang="ar" dir="rtl">{esc(b["arabic"])}</p>
+            </div>
+            <p class="hb-size">{size}</p>
+            <div class="hb-goal">
+              <p class="hb-label" id="hb-goal-label">How many do you want to read a day?</p>
+              <div class="hb-chips" role="group" aria-labelledby="hb-goal-label">{chips}</div>
+              <p class="hb-est" aria-live="polite">At {goal} a day, you finish it in {duration(-(-b["hadiths"] // goal))}.</p>
+            </div>
+            <div class="hb-chapter">
+              <p class="hb-ch">{head}{ar}</p>
+              <p class="hb-progress" aria-live="polite">0 of {first["size"]:,} read</p>
+              <div class="hb-bar"><i></i></div>
+              <ul class="hb-rows">{rows}
+              </ul>{more_line}
+            </div>'''
+
+hb = json.loads((root / "data" / "hadith-books.json").read_text())["books"]
+shelf = "".join(
+    f'''
+          <button type="button" class="hb-book" data-book="{b["id"]}" aria-pressed="{str(i == 0).lower()}" aria-label="{esc(b["title"])}, {b["hadiths"]:,} hadiths" style="--leather: {b["leather"]}">
+            <span class="hb-cover"><svg aria-hidden="true"><use href="#i-rosette"/></svg><span class="hb-cover-ar" lang="ar" dir="rtl">{esc(b["arabic"])}</span></span>
+            <span class="hb-name">{esc(b["title"])}</span>
+          </button>'''
+    for i, b in enumerate(hb)
+)
+s = between(s, "hadith-shelf", shelf, 10)
+s = between(s, "hadith-card", hadith_card(hb[0]), 12)
 page.write_text(s)
 print(f"{len(cards)} dua cards, {len(items)} FAQ answers -> {page.name}")

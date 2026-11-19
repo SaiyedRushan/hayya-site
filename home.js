@@ -983,6 +983,109 @@ function startChecklist(duas, ids) {
   toEnd();
 }
 
+/* ---------- Hadith: the shelf, and one book's card ---------- */
+
+// The card is written into the page for the first book by tools/build-static.py
+// (hadith_card there), so it reads without JavaScript; this redraws it for the
+// book picked, the goal chosen and the hadiths ticked. Keep the two alike.
+async function startHadith() {
+  const shelf = $('#hb-shelf');
+  const card = $('#hb-card');
+  if (!shelf || !card) return;
+  let books;
+  try {
+    books = (await (await fetch('data/hadith-books.json')).json()).books;
+  } catch {
+    return; // The written-in card stays as it is.
+  }
+  const byId = Object.fromEntries(books.map((b) => [b.id, b]));
+  const num = new Intl.NumberFormat('en');
+  const GOALS = [1, 3, 5, 10];
+  let current = books[0].id;
+  let goal = 1;
+  const ticked = {}; // book id -> Set of hadith numbers ticked here
+
+  const duration = (days) =>
+    days <= 60 ? `${days} ${days === 1 ? 'day' : 'days'}` : days <= 730 ? `about ${Math.round(days / 30)} months` : `about ${Math.round(days / 365)} years`;
+  const estimate = (b) => `At ${goal} a day, you finish it in ${duration(Math.ceil(b.hadiths / goal))}.`;
+  const tick = '<svg aria-hidden="true"><use href="#i-check"/></svg>';
+
+  const progress = (b) => {
+    const done = ticked[b.id]?.size ?? 0;
+    const finished = done === b.first.size;
+    return { done, finished, text: finished ? `All ${num.format(b.first.size)} read` : `${num.format(done)} of ${num.format(b.first.size)} read` };
+  };
+
+  const render = () => {
+    const b = byId[current];
+    const f = b.first;
+    const marks = ticked[b.id] ?? new Set();
+    const head = f.label ? `${escapeHtml(f.label)}: ${escapeHtml(f.en)}` : `The first ${f.shown.length} hadiths`;
+    const ar = f.label ? ` <span lang="ar" dir="rtl">${escapeHtml(f.ar)}</span>` : '';
+    const size = b.chapters > 1 ? `${num.format(b.hadiths)} hadiths in ${b.chapters} chapters` : `${num.format(b.hadiths)} hadiths`;
+    const more = f.size - f.shown.length;
+    const p = progress(b);
+    card.innerHTML = `
+      <div class="hb-top">
+        <div>
+          <h3 class="hb-title">${escapeHtml(b.title)}</h3>
+          <p class="hb-by">${escapeHtml(b.by)}</p>
+        </div>
+        <p class="hb-title-ar" lang="ar" dir="rtl">${escapeHtml(b.arabic)}</p>
+      </div>
+      <p class="hb-size">${size}</p>
+      <div class="hb-goal">
+        <p class="hb-label" id="hb-goal-label">How many do you want to read a day?</p>
+        <div class="hb-chips" role="group" aria-labelledby="hb-goal-label">${GOALS.map((g) => `<button type="button" data-goal="${g}" aria-pressed="${g === goal}">${g}</button>`).join('')}</div>
+        <p class="hb-est" aria-live="polite">${estimate(b)}</p>
+      </div>
+      <div class="hb-chapter">
+        <p class="hb-ch">${head}${ar}</p>
+        <p class="hb-progress" aria-live="polite">${p.text}</p>
+        <div class="hb-bar"><i style="--done: ${(p.done / f.size) * 100}%"></i></div>
+        <ul class="hb-rows">${f.shown.map((h) => {
+          const read = marks.has(h.n);
+          return `
+          <li class="hb-row${read ? ' is-read' : ''}"><button type="button" class="hb-tick" role="checkbox" aria-checked="${read}" data-n="${escapeHtml(h.n)}" aria-label="Mark hadith ${escapeHtml(h.n)} as read">${read ? tick : ''}</button><a href="${escapeHtml(h.url)}" target="_blank" rel="noopener">Hadith ${escapeHtml(h.n)}<small>sunnah.com<svg aria-hidden="true"><use href="#i-out"/></svg></small></a></li>`;
+        }).join('')}
+        </ul>${more > 0 ? `\n        <p class="hb-more">${num.format(more)} more in this ${f.label ? 'chapter' : 'book'}.</p>` : ''}${p.finished ? '\n        <p class="hb-done">You finished this chapter.</p>' : ''}
+      </div>`;
+  };
+
+  shelf.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-book]');
+    if (!btn || btn.dataset.book === current) return;
+    current = btn.dataset.book;
+    $$('[data-book]', shelf).forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    render();
+  });
+
+  card.addEventListener('click', (e) => {
+    const chip = e.target.closest('[data-goal]');
+    if (chip) {
+      goal = Number(chip.dataset.goal);
+      $$('[data-goal]', card).forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+      $('.hb-est', card).textContent = estimate(byId[current]);
+      return;
+    }
+    const box = e.target.closest('.hb-tick');
+    if (!box) return;
+    const b = byId[current];
+    const marks = (ticked[b.id] ||= new Set());
+    const was = progress(b).finished;
+    if (marks.has(box.dataset.n)) marks.delete(box.dataset.n);
+    else marks.add(box.dataset.n);
+    render();
+    card.querySelector(`.hb-tick[data-n="${CSS.escape(box.dataset.n)}"]`)?.focus({ preventScroll: true });
+    if (!was && progress(b).finished) {
+      confetti();
+      navigator.vibrate?.(40);
+    }
+  });
+
+  render();
+}
+
 /* ---------- The picture rail ---------- */
 
 $$('.rail-wrap').forEach((wrap) => {
@@ -1005,3 +1108,4 @@ $$('.rail-wrap').forEach((wrap) => {
 
 startLiveTimes();
 startDuas();
+startHadith();

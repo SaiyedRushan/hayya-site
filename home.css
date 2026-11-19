@@ -492,6 +492,119 @@ button.prow:active { transform: scale(.98); }
 .switch input:checked + .switch-track span { transform: translateX(18px); }
 .switch input:focus-visible + .switch-track { outline: 2px solid var(--gold); outline-offset: 3px; }
 
+/* ---------- Hadith ---------- */
+/* The shelf: the app's drawn covers, leather with a gold-tooled frame and the star. */
+.hb-shelf { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px 20px; max-width: 1060px; margin: 0 auto clamp(48px, 6vw, 72px); padding-top: 12px; }
+.hb-book {
+  width: 112px; padding: 0; border: 0; background: none; cursor: pointer; touch-action: manipulation;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  font: 600 13px/1.3 var(--sans); color: rgba(233, 225, 207, .72); text-align: center;
+}
+.hb-cover {
+  --gilt: #d9b866;
+  position: relative; width: 100%; aspect-ratio: 2 / 3; border-radius: 2px 6px 6px 2px; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12%;
+  padding: 0 12px 0 calc(9% + 12px);
+  background: linear-gradient(160deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, .26)), var(--leather);
+  box-shadow: 0 18px 28px -12px rgba(0, 0, 0, .65), inset 0 0 0 1px rgba(0, 0, 0, .25);
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+/* The spine, where the boards fold, and the double frame tooled in gold. */
+.hb-cover::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; width: 9%; background: rgba(0, 0, 0, .3); box-shadow: 1px 0 0 rgba(255, 255, 255, .14); }
+.hb-cover::after {
+  content: ""; position: absolute; top: 7px; bottom: 7px; left: calc(9% + 6px); right: 7px;
+  border: 1px solid rgba(217, 184, 102, .75); outline: .6px solid rgba(217, 184, 102, .4); outline-offset: -4px;
+}
+.hb-cover svg { width: 46%; aspect-ratio: 1; color: var(--gilt); opacity: .75; flex: none; }
+.hb-cover-ar { font: 700 15px/1.4 var(--serif); color: var(--gilt); text-align: center; text-wrap: balance; }
+.hb-name { color: inherit; max-width: 100%; overflow-wrap: anywhere; transition: color .25s; }
+.hb-book:hover .hb-cover { transform: translateY(-4px); }
+.hb-book:hover .hb-name { color: var(--cream); }
+/* The book shown in the card below stands out from the shelf, with the app's ribbon. */
+.hb-book[aria-pressed="true"] .hb-cover { transform: translateY(-10px); box-shadow: 0 28px 36px -14px rgba(0, 0, 0, .75), 0 0 0 2px var(--gold-bright); }
+.hb-book[aria-pressed="true"] .hb-cover > span::after {
+  content: ""; position: absolute; top: 0; right: 16%; width: 10%; height: 24%; background: #efe2bd;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+}
+.hb-book[aria-pressed="true"] .hb-name { color: var(--gold-bright); }
+.hb-book:focus-visible { outline: none; }
+.hb-book:focus-visible .hb-cover { outline: 2px solid var(--gold-bright); outline-offset: 4px; }
+
+.hb-demo { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 5vw, 64px); align-items: center; max-width: 1020px; margin: 0 auto; }
+.hb-copy h3 { font-family: var(--serif); font-size: clamp(28px, 3.4vw, 38px); line-height: 1.15; color: var(--cream); margin: 0 0 14px; text-wrap: balance; }
+.hb-copy p { color: rgba(233, 225, 207, .8); margin: 0 0 16px; font-size: 17px; }
+.hb-points { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.hb-points li { position: relative; padding-left: 26px; color: var(--cream); font-size: 16px; }
+.hb-points li::before {
+  content: ""; position: absolute; left: 0; top: .32em; width: 15px; height: 15px; border-radius: 50%;
+  background: var(--gold-bright) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 12.5 4 4 8-8.5' fill='none' stroke='%230c2b21' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
+.hb-copy .hb-note { font-size: 14px; color: rgba(233, 225, 207, .62); margin: 0; }
+
+/* The card: one book as the app's Hadith page shows it, in the light colours. */
+.hb-card {
+  background: var(--paper); color: var(--ink); border-radius: 28px; padding: clamp(20px, 3vw, 28px);
+  box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6); min-width: 0;
+}
+.hb-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.hb-title { font-family: var(--serif); font-size: clamp(24px, 2.6vw, 30px); line-height: 1.15; color: var(--green); margin: 0; }
+.hb-by { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+.hb-title-ar { margin: 0; font: 700 22px/1.5 var(--serif); color: #8a6a24; flex: none; max-width: 45%; text-align: right; }
+.hb-size { margin: 12px 0 0; font-size: 14px; font-weight: 600; color: var(--green); font-variant-numeric: tabular-nums; }
+.hb-goal { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+.hb-label { margin: 0 0 10px; font-weight: 700; font-size: 15px; color: var(--ink); }
+.hb-chips { display: flex; gap: 8px; }
+.hb-chips button {
+  flex: 1; min-height: 44px; border-radius: 12px; cursor: pointer; touch-action: manipulation;
+  border: 1.5px solid var(--line); background: #fff; color: var(--green);
+  font: 700 16px var(--sans); font-variant-numeric: tabular-nums;
+  transition: background .2s, border-color .2s, color .2s;
+}
+.hb-chips button:hover { border-color: var(--gold); }
+.hb-chips button[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--cream); }
+.hb-chips button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.hb-est { margin: 12px 0 0; font-size: 15px; color: #3a4740; font-variant-numeric: tabular-nums; }
+.hb-chapter { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+.hb-ch { margin: 0; font-weight: 700; font-size: 15.5px; color: var(--ink); }
+.hb-ch span { font: 400 17px var(--serif); color: var(--muted); margin-left: 6px; }
+.hb-progress { margin: 6px 0 8px; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.hb-bar { height: 6px; border-radius: 3px; background: #ece5d4; overflow: hidden; }
+.hb-bar i { display: block; height: 100%; width: var(--done, 0%); background: var(--green-bright); border-radius: 3px; transition: width .4s var(--ease); }
+.hb-rows { list-style: none; margin: 12px 0 0; padding: 0; }
+.hb-row { display: flex; align-items: center; gap: 12px; min-height: 48px; }
+.hb-row + .hb-row { border-top: 1px solid var(--line); }
+.hb-tick {
+  width: 28px; height: 28px; border-radius: 50%; flex: none; cursor: pointer; padding: 0; touch-action: manipulation;
+  border: 1.5px solid #cfc7b2; background: transparent; display: grid; place-items: center;
+  transition: background .2s, border-color .2s, transform .15s var(--ease);
+}
+.hb-tick:hover { border-color: var(--green-bright); }
+.hb-tick:active { transform: scale(.9); }
+.hb-tick[aria-checked="true"] { background: var(--green-bright); border-color: var(--green-bright); }
+.hb-tick svg { width: 16px; height: 16px; color: #fff; }
+.hb-tick:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.hb-row a { flex: 1; min-width: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 0; color: var(--ink); font-weight: 600; font-size: 15px; text-decoration: none; font-variant-numeric: tabular-nums; }
+.hb-row a small { display: inline-flex; align-items: center; gap: 4px; color: #8a6a24; font-weight: 600; font-size: 13px; }
+.hb-row a small svg { width: 14px; height: 14px; }
+.hb-row a:hover small { text-decoration: underline; }
+.hb-row a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
+.hb-row.is-read a { color: var(--muted); }
+.hb-more { margin: 8px 0 0; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.hb-done { margin: 10px 0 0; font-weight: 700; color: var(--green-bright); }
+
+@media (max-width: 860px) {
+  .hb-demo { grid-template-columns: minmax(0, 1fr); }
+}
+/* A narrow screen holds the shelf as one row to scroll sideways, rather than five rows of books. */
+@media (max-width: 720px) {
+  .hb-shelf { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 -24px 40px; padding: 14px 24px 18px; }
+  .hb-shelf::-webkit-scrollbar { display: none; }
+  .hb-book { flex: none; width: 96px; scroll-snap-align: start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hb-cover, .hb-bar i, .hb-tick { transition: none; }
+}
+
 /* ---------- Ringtones ---------- */
 .tones-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
 .tones-art { margin: 0; }
